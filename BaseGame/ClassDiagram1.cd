@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="StarMelee.Pawn" Collapsed="true">
+    <Position X="1.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAEAAAgAAAAAAAAAAAAAAAAQAAAAAAAQAAAA=</HashCode>
+      <FileName>Pawn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Actor" Collapsed="true">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAAAAAAIAgAAIAAAAQAAAARAAAAAAAAAACAAA=</HashCode>
+      <FileName>Actor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Camera" Collapsed="true">
+    <Position X="11.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEAAAAARAAAAAACAAAAAAAAIAACAAAAAAAAAAAAJA=</HashCode>
+      <FileName>Camera.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.DeathSpiral" Collapsed="true">
+    <Position X="4" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DeathSpiral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Function" Collapsed="true">
+    <Position X="4" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAACBAIAAIAIAAgABAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Function.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Game1" Collapsed="true">
+    <Position X="13" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQEEEAAAAAAAwAAAAAAAAAAAAAAAAgAAAAIAAAAAAQ=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Global" Collapsed="true">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAQAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Global.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Helper" Collapsed="true">
+    <Position X="11.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.ParticleEmitter" Collapsed="true">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ParticleEmitter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Program" Collapsed="true">
+    <Position X="13" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Ship" Collapsed="true">
+    <Position X="6.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAJAAACQAAAADAAECAECEAAAEAECAIQUAAAAgAABA=</HashCode>
+      <FileName>Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Shot" Collapsed="true">
+    <Position X="8.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Shot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="StarMelee.Weapon" Collapsed="true">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAIAAAAAAAAAAAAAAAAAAEAAAgCAAAAAAAAAA=</HashCode>
+      <FileName>Weapon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="StarMelee.State" Collapsed="true">
+    <Position X="11.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAAAAACAAAAAA=</HashCode>
+      <FileName>Ship.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

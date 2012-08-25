@@ -1,0 +1,2 @@
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\BaseGame\Content\obj\x86\Debug\ResolveAssemblyReference.cache

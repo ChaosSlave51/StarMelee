@@ -1,0 +1,274 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="DeathSpiral`0" priority="2" />
+      <Item value="protected" priority="3" />
+      <Item value="float" priority="1" />
+      <Item value="Func" priority="1" />
+      <Item value="Math`0" priority="4" />
+      <Item value="Matrix`0" priority="0" />
+      <Item value="new" priority="15" />
+      <Item value="Matrix" priority="0" />
+      <Item value="string" priority="1" />
+      <Item value="step" priority="2" />
+      <Item value="override" priority="5" />
+      <Item value="game" priority="0" />
+      <Item value="ear" priority="0" />
+      <Item value="Game1`0" priority="0" />
+      <Item value="Game1" priority="1" />
+      <Item value="AppDomainSetup`0" priority="0" />
+      <Item value="Game" priority="1" />
+      <Item value="try" priority="0" />
+      <Item value="finally" priority="0" />
+      <Item value="AppDomainManagerInitializationOptions`0" priority="0" />
+      <Item value="Program`0" priority="1" />
+      <Item value="public" priority="14" />
+      <Item value="virtual" priority="1" />
+      <Item value="void" priority="4" />
+      <Item value="Screen" priority="2" />
+      <Item value="GraphicsDeviceManager`0" priority="0" />
+      <Item value="Shmup`0" priority="0" />
+      <Item value="Shmup" priority="1" />
+      <Item value="graphics" priority="1" />
+      <Item value="screen" priority="1" />
+      <Item value="gameTime" priority="0" />
+      <Item value="BaseGame" priority="1" />
+      <Item value="BaseGame`0" priority="0" />
+      <Item value="BaseScreen`0" priority="1" />
+      <Item value="abstract" priority="1" />
+      <Item value="Director`0" priority="1" />
+      <Item value="CurrentScreen" priority="1" />
+      <Item value="IDirector`0" priority="0" />
+      <Item value="_director" priority="0" />
+      <Item value="StorageDevice`0" priority="0" />
+      <Item value="StorageContainer`0" priority="0" />
+      <Item value="int" priority="0" />
+      <Item value="bool" priority="2" />
+      <Item value="class" priority="0" />
+      <Item value="object" priority="2" />
+      <Item value="o" priority="0" />
+      <Item value="null" priority="6" />
+      <Item value="_AppDomain`0" priority="0" />
+      <Item value="T`0" priority="0" />
+      <Item value="return" priority="2" />
+      <Item value="_property" priority="0" />
+      <Item value="IActionState`0" priority="0" />
+      <Item value="_actionState" priority="1" />
+      <Item value="var" priority="1" />
+      <Item value="left" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="InputMapper`0" priority="0" />
+      <Item value="ActionState" priority="0" />
+      <Item value="_mapper" priority="0" />
+      <Item value="InputMapper" priority="0" />
+      <Item value="ButtonState`0" priority="1" />
+      <Item value="Exception" priority="0" />
+      <Item value="Exception`0" priority="4" />
+      <Item value="Expression&lt;Func&lt;ButtonState&gt;&gt;" priority="1" />
+      <Item value="A" priority="0" />
+      <Item value="Delegate`0" priority="0" />
+      <Item value="TargetException`0" priority="0" />
+      <Item value="if" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="GamePad`0" priority="1" />
+      <Item value="GamePadState`0" priority="0" />
+      <Item value="pad" priority="0" />
+      <Item value="inputType" priority="1" />
+      <Item value="typeof" priority="3" />
+      <Item value="Type`0" priority="0" />
+      <Item value="ParameterExpression" priority="0" />
+      <Item value="MethodCallExpression`0" priority="0" />
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Xna.Framework.Input.GamePadState">
+      <Item value="ThumbSticks" priority="0" />
+      <Item value="Triggers" priority="0" />
+      <Item value="Buttons" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Xna.Framework.Input.GamePadThumbSticks">
+      <Item value="Left" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Xna.Framework.Vector2">
+      <Item value="X" priority="0" />
+      <Item value="Y" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Cos`0" priority="0" />
+      <Item value="Sin`0" priority="0" />
+      <Item value="PI" priority="0" />
+      <Item value="Abs`0" priority="1" />
+      <Item value="Sqrt`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Xna.Framework.Vector3">
+      <Item value="X" priority="1" />
+      <Item value="Y" priority="0" />
+      <Item value="Z" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="Write`0" priority="0" />
+      <Item value="WriteLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.Xna.Framework.Input.GamePad">
+      <Item value="GetCapabilities`0" priority="0" />
+      <Item value="GetState`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StarMelee.Game1">
+      <Item value="Dispose`0" priority="1" />
+      <Item value="Content" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@StarMelee.Program">
+      <Item value="Game" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StarMelee.Screen.Shmup">
+      <Item value="Update`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.Xna.Framework.Color">
+      <Item value="Azure" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BaseGame.Screen.BaseScreen">
+      <Item value="Initialise`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BaseGame.IDirector">
+      <Item value="CurrentScreen" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.IsolatedStorage.IsolatedStorageFileStream">
+      <Item value="Synchronized`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.Xna.Framework.Storage.StorageDevice">
+      <Item value="BeginShowSelector`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="GetProperties`0" priority="0" />
+      <Item value="GetProperty`0" priority="4" />
+      <Item value="GetMethod`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.PropertyInfo">
+      <Item value="GetValue`0" priority="2" />
+      <Item value="SetValue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BaseGame.Input.IActionState">
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Xna.Framework.Input.GamePadButtons">
+      <Item value="A" priority="2" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Xna.Framework.Input.ButtonState">
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StarMelee.Input.ActionState">
+      <Item value="A" priority="0" />
+      <Item value="Fire1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Microsoft.Xna.Framework.Input.ButtonState">
+      <Item value="Pressed" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BaseGame.Input.BoolInputState">
+      <Item value="Value`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.Expressions.Expression`1">
+      <Item value="Compile`0" priority="2" />
+      <Item value="CompileToMethod`0" priority="0" />
+      <Item value="Body" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Func`1">
+      <Item value="Invoke`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Linq.Expressions.Expression">
+      <Item value="Parameter`0" priority="0" />
+      <Item value="Property`0" priority="0" />
+      <Item value="Lambda`0" priority="0" />
+      <Item value="PropertyOrField`0" priority="0" />
+      <Item value="Invoke`0" priority="0" />
+      <Item value="Call`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.Expressions.ConstantExpression">
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Linq.Expressions.MemberExpression">
+      <Item value="Expression" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Shot.cs" caret="407" fromTop="16" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:IActionState.cs" caret="132" fromTop="7" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Input/f:ActionState.cs" caret="243" fromTop="11" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Config/f:Config.xsd" caret="324" fromTop="7" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Config.xml" caret="380" fromTop="12" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:BaseInputState.cs" caret="218" fromTop="9" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:BoolInputState.cs" caret="473" fromTop="17" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:ObjectExtension.cs" caret="201" fromTop="9" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:Camera.cs" caret="0" fromTop="0" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Config/f:Config.cs" caret="950" fromTop="0" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Functions/f:DeathSpiral.cs" caret="531" fromTop="0" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Director.cs" caret="621" fromTop="25" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:BaseGame.cs" caret="2410" fromTop="27" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Screen/f:BaseScreen.cs" caret="181" fromTop="8" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screen/f:Shmup.cs" caret="2089" fromTop="35" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:IDirector.cs" caret="0" fromTop="0" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:GameState.cs" caret="294" fromTop="12" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="2944" fromTop="26" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="1970" fromTop="18" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:IOC/f:Module.cs" caret="257" fromTop="12" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/f:Weapon.cs" caret="847" fromTop="23" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Program.cs" caret="437" fromTop="17" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="1372" fromTop="20" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="656" fromTop="33" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="589" fromTop="31" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="588" fromTop="16" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="362" fromTop="16" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="532" fromTop="22" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screen/f:Shmup.cs" caret="639" fromTop="12" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="656" fromTop="19" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:ObjectExtension.cs" caret="329" fromTop="11" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="1349" fromTop="21" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="1719" fromTop="21" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Functions/f:DeathSpiral.cs" caret="487" fromTop="14" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:BaseGame.cs" caret="2084" fromTop="13" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:BaseGame.cs" caret="2583" fromTop="31" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:BaseGame.cs" caret="1972" fromTop="14" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="4088" fromTop="17" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="4440" fromTop="27" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="5274" fromTop="20" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="5469" fromTop="35" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screen/f:Shmup.cs" caret="2089" fromTop="35" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="2944" fromTop="22" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Input/f:InputMapper.cs" caret="1979" fromTop="18" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:GameState.cs" caret="458" fromTop="16" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:GameState.cs" caret="406" fromTop="17" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:GameState.cs" caret="359" fromTop="15" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:GameState.cs" caret="210" fromTop="9" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:IOC/f:Module.cs" caret="307" fromTop="12" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Program.cs" caret="143" fromTop="3" />
+      <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:IOC/f:Module.cs" caret="154" fromTop="8" />
+      <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Program.cs" caret="631" fromTop="22" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using BaseGame.Drivers;
+using BaseGame.Functions;
+using Microsoft.Xna.Framework;
+using StarMelee.Actors.Pawns;
+
+namespace StarMelee.Drivers
+{
+    class DroneDriver : IDriver<Ship>
+    {
+    
+        private Wave _path;
+        public DroneDriver( Vector3 rotation)
+        {
+            _path = new Wave() {Scale = 50, Amplitude = 1000, Frequency = 500, StartPhase = 0};
+            _path.Rotation = rotation;
+        }
+
+
+
+        public void Update(Ship pawn, float time)
+        {
+
+            pawn.Movement= _path.GetStep(time);
+            pawn.Rotation = _path.GetRotation(time);
+            pawn.Fire1();
+        }
+    }
+}

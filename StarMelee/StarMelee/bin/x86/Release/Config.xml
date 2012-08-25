@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" ?>
+<Config>
+  <Input>
+    <Actions>
+      <Action Name="Left">
+        <Binding Controller="GamePad" Category="Analog" Input="ThumbSticks.Left.X" State="-">
+        </Binding>
+      </Action>
+      <Action Name="Right">
+        <Binding Controller="GamePad" Category="Analog" Input="ThumbSticks.Left.X" State="+">
+        </Binding>
+      </Action>
+      <Action Name="Up">
+        <Binding Controller="GamePad" Category="Analog" Input="ThumbSticks.Left.Y" State="+">
+        </Binding>
+      </Action>
+      <Action Name="Down">
+        <Binding Controller="GamePad" Category="Analog" Input="ThumbSticks.Left.Y" State="-">
+        </Binding>
+      </Action>
+      <Action Name="Fire1">
+        <Binding Controller="GamePad" Category="Buttons" Input="Buttons.A" State="Pressed">
+        </Binding>
+      </Action>
+      <Action Name="Fire2">
+        <Binding Controller="GamePad" Category="Buttons" Input="Buttons.B" State="Pressed">
+        </Binding>
+      </Action>
+      <Action Name="Fire3">
+        <Binding Controller="GamePad" Category="Buttons" Input="Buttons.X" State="Pressed">
+        </Binding>
+      </Action>
+      <Action Name="Fire4">
+        <Binding Controller="GamePad" Category="Buttons" Input="Buttons.Y" State="Pressed">
+        </Binding>
+      </Action>
+    </Actions>
+  </Input>
+</Config>

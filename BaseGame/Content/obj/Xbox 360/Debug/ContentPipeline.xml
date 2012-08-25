@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Models\Ships\p1_rocket.x</Source>
+      <Name>Models\Ships\p1_rocket</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\Models\Ships\p1_rocket.xnb</Output>
+      <Time>2009-06-21T16:56:04.7025638-04:00</Time>
+      <Dependency>
+        <Key>obj\Xbox 360\Debug\Models\Ships\p1_rocket_0.xml</Key>
+        <Value>2010-12-31T04:13:54.9176-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\ships\p1_back_0.xnb</Request>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\ships\p1_rocket_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Ships\pea_proj.x</Source>
+      <Name>Models\Ships\pea_proj</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\Models\Ships\pea_proj.xnb</Output>
+      <Time>2009-06-23T01:40:53.5473457-04:00</Time>
+      <Dependency>
+        <Key>obj\Xbox 360\Debug\Models\Ships\pea_proj_0.xml</Key>
+        <Value>2010-12-31T04:13:55.5786-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\Ships\pea_proj_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Textures\Ships\p1_back.tga</Source>
+      <Name>Textures\Ships\p1_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\Textures\Ships\p1_back.xnb</Output>
+      <Time>2009-06-21T16:51:40.2805638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Ships\p1_rocket.tga</Source>
+      <Name>Textures\Ships\p1_rocket</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\Textures\Ships\p1_rocket.xnb</Output>
+      <Time>2009-06-21T16:53:17.2945638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Ships\saucer_p1_diff_v1.tga</Source>
+      <Name>Textures\Ships\saucer_p1_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\Textures\Ships\saucer_p1_diff_v1.xnb</Output>
+      <Time>2009-06-22T00:42:04.7525638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\Ships\pea_proj.tga</Source>
+      <Name>Textures\Ships\pea_proj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\Textures\Ships\pea_proj.xnb</Output>
+      <Time>2009-06-23T01:40:16.3763457-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p1_saucer.fbx</Source>
+      <Name>Models\Ships\p1_saucer</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\Models\Ships\p1_saucer.xnb</Output>
+      <Time>2009-06-22T00:44:06.1315638-04:00</Time>
+      <Dependency>
+        <Key>obj\Xbox 360\Debug\Models\Ships\p1_saucer_0.xml</Key>
+        <Value>2010-12-31T04:13:56.7226-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\ships\saucer_p1_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p1_rocket.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\Xbox 360\Debug\Models\Ships\p1_rocket_0.xml</Output>
+      <Time>2009-06-21T16:56:04.7025638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\ships\p1_back.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\ships\p1_back_0.xnb</Output>
+      <Time>2009-06-21T16:51:40.2805638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\ships\p1_rocket.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\ships\p1_rocket_0.xnb</Output>
+      <Time>2009-06-21T16:53:17.2945638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Ships\pea_proj.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\Xbox 360\Debug\Models\Ships\pea_proj_0.xml</Output>
+      <Time>2009-06-23T01:40:53.5473457-04:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\Ships\pea_proj.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\Ships\pea_proj_0.xnb</Output>
+      <Time>2009-06-23T01:40:16.3763457-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p1_saucer.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\Xbox 360\Debug\Models\Ships\p1_saucer_0.xml</Output>
+      <Time>2009-06-22T00:44:06.1315638-04:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\ships\saucer_p1_diff_v1.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\textures\ships\saucer_p1_diff_v1_0.xnb</Output>
+      <Time>2009-06-22T00:42:04.7525638-04:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Xbox360</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>true</CompressContent>
+      <RootDirectory>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\BaseGame\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\BaseGame\Content\obj\Xbox 360\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\Xbox 360\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T13:41:18-04:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2010-12-24T17:31:16.0246-05:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

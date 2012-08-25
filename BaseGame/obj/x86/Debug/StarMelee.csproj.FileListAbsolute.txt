@@ -1,0 +1,17 @@
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\StarMelee.exe
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\StarMelee.pdb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\obj\x86\Debug\StarMelee.exe
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\obj\x86\Debug\StarMelee.pdb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_rocket.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\Textures\Ships\p1_back.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\Textures\Ships\p1_rocket.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\p1_back_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\p1_rocket_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\Textures\Ships\saucer_p1_diff_v1.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_saucer.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\saucer_p1_diff_v1_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\pea_proj.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\Textures\Ships\pea_proj.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\bin\x86\Debug\Content\textures\Ships\pea_proj_0.xnb

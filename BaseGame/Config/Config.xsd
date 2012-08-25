@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Config">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Input">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Actions">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="Action">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Binding">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute name="Controller" type="xs:string" use="required" />
+                                  <xs:attribute name="Category" type="xs:string" use="required" />
+                                  <xs:attribute name="Input" type="xs:string" use="required" />
+                                  <xs:attribute name="State" type="xs:string" use="required" />
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="Name" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
