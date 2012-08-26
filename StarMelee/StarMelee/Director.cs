@@ -16,48 +16,61 @@ namespace StarMelee
     {
         private GraphicsDeviceManager _graphics;
         public BaseScreen CurrentScreen { get; set; }
+        private bool _screenChange = false;
 
-        public Director()
+        private void SwitchScreen(BaseScreen newScreen)
         {
+            _screenChange = true;
+            CurrentScreen.Dispose();
+            newScreen.CreateBindings();
 
-            var opening = new Opening();
-            opening.StartGame+=OpeningOnStartGame;
-            CurrentScreen = opening;
+            newScreen.Initialise(_graphics);
 
-            //CurrentScreen.StartGame += StartGameEvent;
+            CurrentScreen = newScreen;
+
+            _screenChange = false;
         }
 
         private void OpeningOnStartGame()
         {
-            var thread = new Thread(() =>
-                                        {
-                                            var shmup = new Shmup();
-                                            shmup.Initialise(_graphics);
-                                            shmup.LoadContent();
-                                            CurrentScreen.Dispose();
-                                            CurrentScreen = shmup;
-                                        });
-            thread.Start();
+            var screen = new Shmup();
+            screen.Lose += ShmupOnLose;
+            SwitchScreen(screen);
         }
+        private void ShmupOnLose()
+        {
+            var screen = new Opening();
+            SwitchScreen(screen);
 
+            screen.StartGame += OpeningOnStartGame;
+        }
         public void Initialise(GraphicsDeviceManager graphics)
         {
             _graphics = graphics;
+
+            var opening = new Opening();
+            opening.StartGame += OpeningOnStartGame;
+            opening.CreateBindings();
+            CurrentScreen = opening;
+
+
             CurrentScreen.Initialise(graphics);
         }
 
         public void Update(GameTime time)
         {
-            CurrentScreen.Update(time);
+            if(!_screenChange)
+                CurrentScreen.Update(time);
         }
         public void Draw(GameTime time)
         {
-            CurrentScreen.Draw(time);
+            if (!_screenChange)
+                CurrentScreen.Draw(time);
         }
 
         public void LoadContent()
         {
-            CurrentScreen.LoadContent();
+            
         }
 
 

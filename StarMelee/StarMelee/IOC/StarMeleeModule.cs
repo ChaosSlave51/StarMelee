@@ -17,10 +17,6 @@ namespace StarMelee.IOC
     {
         public override void Load()
         {
-#if DEBUG
-            BindResource<Model>("Models/Debug/sphere");
-     
-#endif
 
             Bind<ActionState>().ToMethod(context =>
                                              {
@@ -32,16 +28,18 @@ namespace StarMelee.IOC
                 ).InSingletonScope();
 
             //game models
-            BindResource<Model>("Models/Ships/pea_proj");
-            BindResource<Model>("Models/Ships/p1_saucer");
-            BindResource<SpriteFont>("fonts/LcdBold");
-            BindResource<SoundEffect>("Audio/Weapons/laser-zap-01");
-            BindResource<SoundEffect>("Audio/Ships/bombexplosion");
-            BindResource<SoundEffect>("Audio/Ships/scream-02");
+            //BindResource<Model>("Models/Ships/pea_proj");
+            
+            //BindResource<Model>("Models/Ships/p1_saucer");
+            
+            //BindResource<SpriteFont>("fonts/LcdBold");
+            //BindResource<SoundEffect>("Audio/Weapons/laser-zap-01");
+            //BindResource<SoundEffect>("Audio/Ships/bombexplosion");
+            //BindResource<SoundEffect>("Audio/Ships/scream-02");
 
-            BindResource<SpriteFont>("fonts/7th Service");
-            BindResource<Texture2D>("Sprites/Controllers/XBox/small_start");
-            BindResource<Song>("Audio/Music/An_Infinite_Univers");
+            //BindResource<SpriteFont>("fonts/7th Service");
+            //BindResource<Texture2D>("Sprites/Controllers/XBox/small_start");
+            //BindResource<Song>("Audio/Music/An_Infinite_Univers");
             
         }
 

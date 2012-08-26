@@ -3,18 +3,18 @@ using BaseGame;
 using BaseGame.Actors.Pawns;
 using BaseGame.Drivers;
 using BaseGame.Functions;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace StarMelee.Actors.Pawns
 {
-    class BaseBullet:BasePawn
+    class BaseBullet : BasePawn, INeedsResources
     {
-
-
-
-        public BaseBullet(Vector3 rotation = new Vector3()): base(ServiceLocator.Current.GetInstance<Model>(("Models/Ships/pea_proj")),
+       
+        public BaseBullet(Vector3 rotation = new Vector3())
+            : base("Models/Ships/pea_proj",
             new FunctionDriver(new Forward() {Scale = 200},
                 rotation),rotation)
         {
@@ -32,5 +32,7 @@ namespace StarMelee.Actors.Pawns
     
 
         }
+
+
     }
 }

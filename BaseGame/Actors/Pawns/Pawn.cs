@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using BaseGame.Drivers;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,10 +12,14 @@ namespace BaseGame.Actors.Pawns
     /// <summary>
     /// 
     /// </summary>
-    public class BasePawn : BaseActor
+    public abstract class BasePawn : BaseActor,INeedsResources
     {
+        private readonly string _resourcePath;
         private Model MainModel;
-        
+
+      
+
+    
 #if DEBUG
         private Model CollisionSphereModel;
 #endif 
@@ -35,22 +40,29 @@ namespace BaseGame.Actors.Pawns
         private  MethodInfo updateMethod;
         private IDriver _driver;
 
-        public BasePawn(Model _model, IDriver driver = null, Vector3 rotation= new Vector3())
+        public BasePawn(string resourcePath, IDriver driver = null, Vector3 rotation= new Vector3())
+        {
+            _resourcePath = resourcePath;
+
+
+            Movement = new Vector3();
+            Driver = driver;
+            Rotation = rotation;
+        }
+
+        protected override void ResolveResources()
         {
 #if DEBUG
             CollisionSphereModel = ServiceLocator.Current.GetInstance<Model>("Models/Debug/sphere");
 #endif 
-
-            MainModel = _model;
-            Movement = new Vector3();
-            Driver = driver;
-            Rotation = rotation;
-
- 
-
+            MainModel = ServiceLocator.Current.GetInstance<Model>(_resourcePath);
         }
+
         public void Draw(Camera camera)
         {
+            ResolveResourcesIfNeeded();
+
+
             RenderModel(MainModel, camera,effect=>
                                               {
                                                   
@@ -79,9 +91,9 @@ namespace BaseGame.Actors.Pawns
 
             //                                                          //sets location of model
             //                                                          effect.World =
-            //                                                              Helper.CreateRotationXYZ(BaseRotation)*
-            //                                                              Helper.CreateRotationXYZ(Rotation)*
-            //                                                              Matrix.CreateScale(collisionSphere.Radius)*
+            //                                                              Helper.CreateRotationXYZ(BaseRotation) *
+            //                                                              Helper.CreateRotationXYZ(Rotation) *
+            //                                                              Matrix.CreateScale(collisionSphere.Radius) *
             //                                                              Matrix.CreateTranslation(BasePosition +
             //                                                                                       Position +
             //                                                                                       collisionSphere.
@@ -142,6 +154,16 @@ namespace BaseGame.Actors.Pawns
         public void Kill()
         {
             Alive = false;
+        }
+
+
+        public virtual IEnumerable<Resource> ResourcePaths()
+        {
+            return new Resource[] { new Resource(_resourcePath, typeof(Model)),
+#if DEBUG
+            new Resource("Models/Debug/sphere",typeof(Model))
+#endif
+            };
         }
     }
 }

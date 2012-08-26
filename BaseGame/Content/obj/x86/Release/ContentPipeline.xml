@@ -185,6 +185,223 @@
       <Output>obj\x86\Release\Models\Debug\sphere_0.xml</Output>
       <Time>2012-08-19T01:19:19.1202654-04:00</Time>
     </Item>
+    <Item>
+      <Source>Audio\Weapons\laser-zap-01.wav</Source>
+      <Name>Audio\Weapons\laser-zap-01</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Audio\Weapons\laser-zap-01.xnb</Output>
+      <Time>2012-08-22T01:07:32.9142-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Ships\bombexplosion.wav</Source>
+      <Name>Audio\Ships\bombexplosion</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Audio\Ships\bombexplosion.xnb</Output>
+      <Time>2012-08-22T01:23:54.1202-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Ships\scream-02.wav</Source>
+      <Name>Audio\Ships\scream-02</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Audio\Ships\scream-02.xnb</Output>
+      <Time>2012-08-22T01:31:22.1292-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_back.png</Source>
+      <Name>Sprites\Controllers\XBox\small_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_back.xnb</Output>
+      <Time>2012-08-23T00:01:34.3062-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_bumper_left.png</Source>
+      <Name>Sprites\Controllers\XBox\small_bumper_left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_bumper_left.xnb</Output>
+      <Time>2012-08-23T00:01:34.3072-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_bumper_right.png</Source>
+      <Name>Sprites\Controllers\XBox\small_bumper_right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_bumper_right.xnb</Output>
+      <Time>2012-08-23T00:01:34.3082-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_dpad.png</Source>
+      <Name>Sprites\Controllers\XBox\small_dpad</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_dpad.xnb</Output>
+      <Time>2012-08-23T00:01:34.3092-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_dpad_down.png</Source>
+      <Name>Sprites\Controllers\XBox\small_dpad_down</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_dpad_down.xnb</Output>
+      <Time>2012-08-23T00:01:34.3102-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_dpad_left.png</Source>
+      <Name>Sprites\Controllers\XBox\small_dpad_left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_dpad_left.xnb</Output>
+      <Time>2012-08-23T00:01:34.3112-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_dpad_right.png</Source>
+      <Name>Sprites\Controllers\XBox\small_dpad_right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_dpad_right.xnb</Output>
+      <Time>2012-08-23T00:01:34.3112-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_dpad_up.png</Source>
+      <Name>Sprites\Controllers\XBox\small_dpad_up</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_dpad_up.xnb</Output>
+      <Time>2012-08-23T00:01:34.3122-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_face_a.png</Source>
+      <Name>Sprites\Controllers\XBox\small_face_a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_face_a.xnb</Output>
+      <Time>2012-08-23T00:01:34.3152-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_face_b.png</Source>
+      <Name>Sprites\Controllers\XBox\small_face_b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_face_b.xnb</Output>
+      <Time>2012-08-23T00:01:34.3162-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_face_x.png</Source>
+      <Name>Sprites\Controllers\XBox\small_face_x</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_face_x.xnb</Output>
+      <Time>2012-08-23T00:01:34.3172-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_face_y.png</Source>
+      <Name>Sprites\Controllers\XBox\small_face_y</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_face_y.xnb</Output>
+      <Time>2012-08-23T00:01:34.3182-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_guide.png</Source>
+      <Name>Sprites\Controllers\XBox\small_guide</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_guide.xnb</Output>
+      <Time>2012-08-23T00:01:34.3192-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_start.png</Source>
+      <Name>Sprites\Controllers\XBox\small_start</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_start.xnb</Output>
+      <Time>2012-08-23T00:01:34.3202-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_thumbstick_left.png</Source>
+      <Name>Sprites\Controllers\XBox\small_thumbstick_left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_thumbstick_left.xnb</Output>
+      <Time>2012-08-23T00:01:34.3222-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_thumbstick_right.png</Source>
+      <Name>Sprites\Controllers\XBox\small_thumbstick_right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_thumbstick_right.xnb</Output>
+      <Time>2012-08-23T00:01:34.3232-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_trigger_left.png</Source>
+      <Name>Sprites\Controllers\XBox\small_trigger_left</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_trigger_left.xnb</Output>
+      <Time>2012-08-23T00:01:34.3242-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Sprites\Controllers\XBox\small_trigger_right.png</Source>
+      <Name>Sprites\Controllers\XBox\small_trigger_right</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Sprites\Controllers\XBox\small_trigger_right.xnb</Output>
+      <Time>2012-08-23T00:01:34.3252-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\LcdBold.spritefont</Source>
+      <Name>Fonts\LcdBold</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Fonts\LcdBold.xnb</Output>
+      <Time>2012-08-20T01:08:20.7024-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\7Th Service.spritefont</Source>
+      <Name>Fonts\7Th Service</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Fonts\7Th Service.xnb</Output>
+      <Time>2012-08-23T00:24:03.2272-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Music\An_Infinite_Univers.mp3</Source>
+      <Name>Audio\Music\An_Infinite_Univers</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Audio\Music\An_Infinite_Univers.xnb</Output>
+      <Extra>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Release\Content\Audio\Music\An_Infinite_Univers.wma</Extra>
+      <Time>2012-08-23T19:22:47.7452-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

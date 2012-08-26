@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using BaseGame.Actors.Pawns;
 using BaseGame.Drivers;
 using BaseGame.Functions;
+using BaseGame.Resources;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
@@ -15,8 +17,8 @@ namespace StarMelee.Actors.Pawns
         protected readonly ShmupGameState GameState;
 
 
-        public Ship(Model model, ShmupGameState gameState, IDriver driver = null, Vector3 rotation = new Vector3())
-            : base(model, driver, rotation)
+        public Ship(string resourcePath, ShmupGameState gameState, IDriver driver = null, Vector3 rotation = new Vector3())
+            : base(resourcePath, driver, rotation)
         {
             GameState = gameState;
             Setup();
@@ -63,6 +65,7 @@ namespace StarMelee.Actors.Pawns
 
         public override bool Die()
         {
+            ResolveResourcesIfNeeded();
             if (CurrentState == State.Alive)
             {
                 GameState.Score += PointValue;
@@ -150,7 +153,13 @@ namespace StarMelee.Actors.Pawns
             }
             return false;
         }
+        public override IEnumerable<BaseGame.Resources.Resource> ResourcePaths()
+        {
+            var resources = Resource.Combine(Weapons);
+            return resources.Concat(base.ResourcePaths());
+        }
     }
     public enum State { Alive, Dying, Dead }
 
+    
 }

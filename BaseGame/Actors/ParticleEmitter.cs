@@ -1,22 +1,22 @@
-﻿namespace BaseGame.Actors
-{
-    class ParticleEmitter:BaseActor
-    {
+﻿//namespace BaseGame.Actors
+//{
+//    class ParticleEmitter:BaseActor
+//    {
 
-        public ParticleEmitter()
-        {
+//        public ParticleEmitter()
+//        {
 
             
-        }
-        public void Update()
-        {
+//        }
+//        public void Update()
+//        {
 
-        }
-        public void Draw()
-        {
+//        }
+//        public void Draw()
+//        {
 
 
 
-        }
-    }
-}
+//        }
+//    }
+//}

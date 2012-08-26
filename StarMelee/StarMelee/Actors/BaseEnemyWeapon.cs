@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using BaseGame.Actors;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -17,12 +18,12 @@ namespace StarMelee.Actors
         public int Cooldown = 0;
         private readonly ShmupGameState _gameState;
 
-        protected SoundEffect DeathSound;      public BaseEnemyWeapon(Ship parent, ShmupGameState gameState)
+        protected SoundEffect DeathSound;      
+        
+        public BaseEnemyWeapon(Ship parent, ShmupGameState gameState)
         {
             _gameState = gameState;
             ParentShip = parent;
-
-          
         }
 
 
@@ -48,6 +49,17 @@ namespace StarMelee.Actors
             {
                 Cooldown--;
             }
+        }
+        public IEnumerable<Resource> ResourcePaths()
+        {
+            BaseBullet baseBullet = new BaseBullet();
+            return baseBullet.ResourcePaths();
+
+        }
+
+        protected override void ResolveResources()
+        {
+            
         }
     }
 }

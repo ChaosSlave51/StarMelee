@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using BaseGame;
 using BaseGame.Levels;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 
 namespace StarMelee.Levels
@@ -24,6 +25,11 @@ namespace StarMelee.Levels
                 wave.Launch();
             }
             
+        }
+
+        public IEnumerable<Resource> ResourcePaths()
+        {
+            return Resource.Combine(Waves);
         }
     }
 }

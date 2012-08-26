@@ -5,6 +5,7 @@ using System.Text;
 using BaseGame;
 using BaseGame.Drivers;
 using BaseGame.Functions;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -13,21 +14,28 @@ using StarMelee.Drivers;
 
 namespace StarMelee.Actors.Pawns
 {
-    class BaseEnemyShip:Ship
+    class BaseEnemyShip : Ship
     {
 
         public BaseEnemyShip(ShmupGameState gameState,Vector3 rotation=new Vector3())
-            : base (ServiceLocator.Current.GetInstance<Model>("Models/Ships/p1_saucer"), gameState, new DroneDriver(rotation), rotation)//
+            : base("Models/Ships/p1_saucer", gameState, new DroneDriver(rotation), rotation)//
         {
 
             BaseRotation = new Vector3(MathHelper.PiOver2, 0, 0);
             BaseScale = 0.5f;
             CollisionSpheres= new List<Sphere>(){new Sphere(new Vector3(),500 )};
 
+           
+        }
+        protected override void ResolveResources()
+        {
+            base.ResolveResources();
             DeathSound = ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Ships/bombexplosion");
         }
-
-        
+        public override IEnumerable<Resource> ResourcePaths()
+        {
+            return base.ResourcePaths().Concat(new Resource[] { new Resource("Audio/Ships/bombexplosion", typeof(SoundEffect)), });
+        }
 
         protected override void Setup()
         {
@@ -41,5 +49,6 @@ namespace StarMelee.Actors.Pawns
             Weapons.Add(weapon1);
 
         }
+
     }
 }

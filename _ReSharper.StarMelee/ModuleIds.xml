@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="00B4F503-6B07-4454-B7AC-7C98E5DFD099" ModuleId="StarMelee" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="Microsoft.Xna.Framework" />
+  <Module PersistentId="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B" ModuleId="StarMelee_2" />
+  <Module PersistentId="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553" ModuleId="Microsoft.Xna.Framework_1" />
+</Modules>

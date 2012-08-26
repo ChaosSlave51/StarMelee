@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using BaseGame;
 using BaseGame.Drivers;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -14,12 +15,11 @@ using StarMelee.Inputs;
 
 namespace StarMelee.Actors.Pawns
 {
-    class BasePlayerShip:Ship
+    class BasePlayerShip : Ship
     {
 
-        
         public BasePlayerShip(ShmupGameState gameState,IDriver<BasePlayerShip> driver)
-            : base(  ServiceLocator.Current.GetInstance<Model>("Models/Ships/p1_saucer"), gameState, driver)
+            : base("Models/Ships/p1_saucer", gameState, driver)
         {
             BaseRotation = new Vector3(MathHelper.PiOver2, 0, 0);
             CollisionSpheres = new List<Sphere>() { new Sphere(new Vector3(), 700) };
@@ -31,8 +31,18 @@ namespace StarMelee.Actors.Pawns
             EnterBankTime = 20;
             ExitBankTime = 40;
 
-            DeathSound = ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Ships/scream-02");
+           
 
+        }
+
+        protected override void ResolveResources()
+        {
+            base.ResolveResources();
+            DeathSound = ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Ships/scream-02");
+        }
+        public override IEnumerable<Resource> ResourcePaths()
+        {
+            return base.ResourcePaths().Concat(new Resource[] { new Resource("Audio/Ships/scream-02", typeof(SoundEffect)), });
         }
 
         
@@ -74,5 +84,6 @@ namespace StarMelee.Actors.Pawns
             Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 20, Position = new Vector3(500, 500, 0), Rotation = new Vector3(0,  0,MathHelper.Pi/10) });
             Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 20, Position = new Vector3(-500, 500, 0), Rotation = new Vector3(0, 0, -MathHelper.Pi/10) });
         }
+
     }
 }

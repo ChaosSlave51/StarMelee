@@ -1,13 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using BaseGame;
 using BaseGame.Actors.Pawns;
 using BaseGame.Actors.Sprites;
 using BaseGame.Levels;
+using BaseGame.Resources;
 using BaseGame.Screens;
+using CommonServiceLocator.NinjectAdapter;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
+using Ninject;
 using StarMelee.Actors.Pawns;
 using StarMelee.Drivers;
 using StarMelee.Levels;
@@ -25,25 +29,42 @@ namespace StarMelee.Screens
 
         private readonly ShmupGameState _gameState;
 
-
-
+        private TextSprite Score;
         public Shmup()
         {
             _gameState= new ShmupGameState();
+            _level = new Level1(_gameState);
+            _gameState.Player = new BasePlayerShip(_gameState, new PlayerDriver());
+            Score = new TextSprite("fonts/LcdBold", Color.Goldenrod) { Format = "{0:000000000}" };
+            _gameState.Hud.Add(Score);
             
         }
 
+        public override void CreateBindings()
+        {
+            var kernel = ((NinjectServiceLocator)ServiceLocator.Current).Kernel;
+
+            ReasourceList.Add(_level);
+            ReasourceList.Add(_gameState.Player);
+            ReasourceList.Add(Score);
+
+            foreach (var resource in Resource.Combine(ReasourceList))
+            {
+
+                kernel.Bind(resource.Type).ToMethod(context =>
+                {
+                    return Program.Game.Content.Load<object>(resource.Path);
+                }).InSingletonScope().Named(resource.Path);
+
+                kernel.Get(resource.Type, resource.Path);
+            }
+        }
       
-        private TextSprite Score;
+       
 
         public override void Initialise(GraphicsDeviceManager graphics)
         {
             base.Initialise(graphics);
-            Score = new TextSprite(ServiceLocator.Current.GetInstance<SpriteFont>("fonts/LcdBold"), Color.Goldenrod) { Format = "{0:000000000}" };
-
-      
-
-            
             Matrix projection = Matrix.CreatePerspectiveFieldOfView(
                 MathHelper.ToRadians(40.0f),
                 Graphics.GraphicsDevice.Viewport.AspectRatio,
@@ -53,10 +74,6 @@ namespace StarMelee.Screens
                 new Vector3(0.0f, 0.0f, 30000.0f),
                 new Vector3(0.0f, 0.0f, 0.0f),
                 projection);
-
-            _gameState.Player = new BasePlayerShip(_gameState,new PlayerDriver());
-            _level = new Level1(_gameState);
-            _gameState.Hud.Add(Score);
         }
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
@@ -80,9 +97,17 @@ namespace StarMelee.Screens
 
 
             Score.Value = _gameState.Score;
+
+            if(_gameState.Player.CurrentState==State.Dead)
+            {
+                if (Lose != null)
+                    Lose();
+
+            }
+            
+
         }
 
-        private SpriteFont _font;
         public override void Draw(GameTime gameTime)
         {
             Graphics.GraphicsDevice.Clear(Color.Azure);
@@ -98,30 +123,28 @@ namespace StarMelee.Screens
                                         }
                                     });
             SpriteBatch.Begin();
-            DrawSwpites(gameTime);
+            DrawSprites(gameTime);
             SpriteBatch.End();
         }
-        protected override void DrawSwpites(GameTime gameTime)
+        protected override void DrawSprites(GameTime gameTime)
         {
-            base.DrawSwpites(gameTime);
+            
+            base.DrawSprites(gameTime);
             _gameState.EachSprite(sprite => sprite.Draw(SpriteBatch));
         }
-
-        public override void LoadContent()
+        public override void Dispose()
         {
-            ServiceLocator.Current.GetInstance<Model>("Models/Ships/pea_proj");
-            ServiceLocator.Current.GetInstance<Model>("Models/Ships/p1_saucer");
+            
+            var kernel = ((NinjectServiceLocator)ServiceLocator.Current).Kernel;
+            foreach (var resource in Resource.Combine(ReasourceList))
+            {
+                kernel.Unbind(resource.Type);
+            }
 
-            ServiceLocator.Current.GetInstance<SpriteFont>("fonts/LcdBold");
-
-            ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Weapons/laser-zap-01");
-            ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Ships/bombexplosion");
-            ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Ships/scream-02");
-
-            #if DEBUG
-            ServiceLocator.Current.GetInstance<Model>("Models/Debug/sphere");
-            #endif
-
+            base.Dispose();
         }
+
+
+        public event Action Lose;
     }
 }

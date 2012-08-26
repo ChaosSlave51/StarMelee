@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using BaseGame;
 
 using BaseGame.Actors;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
@@ -23,10 +26,13 @@ namespace StarMelee.Actors
             _gameState = gameState;
             ParentShip = parent;
 
-            FireSound = ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Weapons/laser-zap-01");
+        
         }
+
+
         public void Fire()
         {
+            ResolveResourcesIfNeeded();
             if (Cooldown == 0)
             {
                 BaseBullet baseBullet = new BaseBullet(new Vector3(ParentShip.Rotation.X + Rotation.X, 0, ParentShip.Rotation.Z + Rotation.Z));
@@ -48,5 +54,17 @@ namespace StarMelee.Actors
             }
         }
 
+        public IEnumerable<Resource> ResourcePaths()
+        {
+            BaseBullet baseBullet = new BaseBullet();
+            IEnumerable<Resource> resources = baseBullet.ResourcePaths();
+            return resources.Concat(new Resource[]{new Resource("Audio/Weapons/laser-zap-01", typeof (SoundEffect))});
+
+        }
+
+        protected override void ResolveResources()
+        {
+            FireSound = ServiceLocator.Current.GetInstance<SoundEffect>("Audio/Weapons/laser-zap-01");
+        }
     }
 }

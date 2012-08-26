@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using BaseGame.Actors.Sprites;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,25 +15,33 @@ namespace BaseGame.Screens
 
         protected GraphicsDeviceManager Graphics;
         protected TimeSpan? StartTime;
-
+        protected List<INeedsResources> ReasourceList;
 
         #if DEBUG
                 private TextSprite RunningSlow;
         #endif
+
+        protected BaseScreen()
+        {
+            ReasourceList = new List<INeedsResources>();
+#if DEBUG
+            RunningSlow = new TextSprite("fonts/LcdBold", Color.Red) { Position = new Vector3(700, 0, 0), Value = "SLOW" };
+            ReasourceList.Add(RunningSlow);
+#endif            
+        }
+
         public virtual void Initialise(GraphicsDeviceManager graphics)
         {
             Graphics = graphics;
             SpriteBatch = new SpriteBatch(graphics.GraphicsDevice);
-            #if DEBUG
-                        RunningSlow = new TextSprite(ServiceLocator.Current.GetInstance<SpriteFont>("fonts/LcdBold"), Color.Red) { Position = new Vector3(700, 0, 0), Value = "SLOW" };
-            #endif
         }
 
         public abstract void Update(GameTime gameTime);
 
         public abstract void Draw(GameTime gameTime);
 
-
+        public abstract void CreateBindings();
+        
         protected float GetTimecksFromTime(GameTime time)
         {
             if(StartTime==null)
@@ -41,7 +51,7 @@ namespace BaseGame.Screens
             return (float) (time.TotalGameTime - StartTime).Value.TotalMilliseconds;
         }
 
-        protected virtual void DrawSwpites(GameTime gameTime)
+        protected virtual void DrawSprites(GameTime gameTime)
         {
             
             #if DEBUG
@@ -51,8 +61,7 @@ namespace BaseGame.Screens
                         }
             #endif
         }
-
-        public abstract void LoadContent();
+        
 
         public virtual void Dispose()
         {

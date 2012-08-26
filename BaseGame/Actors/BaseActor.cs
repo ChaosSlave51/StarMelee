@@ -5,12 +5,12 @@ namespace BaseGame.Actors
     /// <summary>
     /// an actor is anything in the world that has physical form
     /// </summary>
-    public class BaseActor
+    public abstract class BaseActor
     {
         public BaseActor()
         {
         }
-
+        protected bool ResourcesLoaded = false;
         public virtual Vector3 Position { get; set; }
         public Vector3 Rotation { get; set; }
         public Vector3 BaseRotation { get; set; }
@@ -38,5 +38,17 @@ namespace BaseGame.Actors
                 return BaseScale*Scale;
             }
         }
+
+        public  void ResolveResourcesIfNeeded()
+        {
+            if(!ResourcesLoaded)
+            {
+                ResolveResources();
+                ResourcesLoaded = true;
+            }
+        }
+
+        protected abstract void ResolveResources();
+
     }
 }

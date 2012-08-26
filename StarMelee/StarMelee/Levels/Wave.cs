@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using System.Text;
 using BaseGame;
+using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using StarMelee.Actors.Pawns;
 
 namespace StarMelee.Levels
 {
-    class Wave
+    class Wave : INeedsResources
     {
         private readonly ShmupGameState _gameState;
         private List<BaseEnemyShip> _ships;
@@ -33,6 +35,11 @@ namespace StarMelee.Levels
         {
             Launched = true;
             _gameState.EnemyShips.AddRange(Ships);
+        }
+
+        public IEnumerable<Resource> ResourcePaths()
+        {
+            return Resource.Combine(Ships);
         }
     }
 }

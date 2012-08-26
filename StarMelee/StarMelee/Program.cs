@@ -25,7 +25,7 @@ namespace StarMelee
                 
                 NinjectServiceLocator locator = new NinjectServiceLocator(kernel);
                 ServiceLocator.SetLocatorProvider(() => (IServiceLocator)locator);
-                //end move
+                //end move?
                 
                 Game = new BaseGame.BaseGame(new Director());
                 Game.Run();
