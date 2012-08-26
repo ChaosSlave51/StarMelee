@@ -23,13 +23,13 @@
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Sprites/f:TextSprite.cs" caret="1335" fromTop="32" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Sprites/f:StillSprite.cs" caret="837" fromTop="24" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:IOC/f:StarMeleeModule.cs" caret="410" fromTop="7" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Audio/f:Music.cs" caret="905" fromTop="32" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Resources/f:Resource.cs" caret="485" fromTop="18" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Director.cs" caret="807" fromTop="20" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Shmup.cs" caret="631" fromTop="25" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Screens/f:BaseScreen.cs" caret="679" fromTop="24" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Opening.cs" caret="663" fromTop="24" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Pawns/f:Pawn.cs" caret="2732" fromTop="6" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Pawns/f:Pawn.cs" caret="3122" fromTop="85" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Audio/f:Music.cs" caret="987" fromTop="27" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Opening.cs" caret="2667" fromTop="29" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Shmup.cs" caret="4692" fromTop="22" />
   </RecentFiles>
   <RecentEdits>
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Physics/f:CollisionHelper.cs" caret="387" fromTop="15" />
@@ -56,11 +56,11 @@
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="1857" fromTop="16" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:IOC/f:StarMeleeModule.cs" caret="1622" fromTop="26" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Sprites/f:StillSprite.cs" caret="837" fromTop="24" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Audio/f:Music.cs" caret="905" fromTop="32" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Director.cs" caret="1025" fromTop="27" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Shmup.cs" caret="4403" fromTop="24" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Screens/f:BaseScreen.cs" caret="1139" fromTop="26" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Opening.cs" caret="663" fromTop="24" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Pawns/f:Pawn.cs" caret="4591" fromTop="30" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Audio/f:Music.cs" caret="987" fromTop="27" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Shmup.cs" caret="4692" fromTop="22" />
   </RecentEdits>
 </RecentFiles>

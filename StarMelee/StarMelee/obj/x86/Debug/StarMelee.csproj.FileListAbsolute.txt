@@ -65,3 +65,5 @@ C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMe
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Fonts\7Th Service.xnb
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\An_Infinite_Univers.xnb
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\An_Infinite_Univers.wma
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\Seeking-Revenge.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\Seeking-Revenge.wma

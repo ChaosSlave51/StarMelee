@@ -32,6 +32,7 @@ namespace BaseGame.Audio
         {
             ResolveResourcesIfNeeded();
             MediaPlayer.Play(Song);
+            MediaPlayer.IsRepeating = true;
         }
         public void Stop()
         {

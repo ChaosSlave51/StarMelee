@@ -402,6 +402,16 @@
       <Extra>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\An_Infinite_Univers.wma</Extra>
       <Time>2012-08-23T19:22:47.7452-04:00</Time>
     </Item>
+    <Item>
+      <Source>Audio\Music\Seeking-Revenge.mp3</Source>
+      <Name>Audio\Music\Seeking-Revenge</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\Seeking-Revenge.xnb</Output>
+      <Extra>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\Seeking-Revenge.wma</Extra>
+      <Time>2012-08-26T12:08:53.8704-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

@@ -35,3 +35,5 @@ Content\Sprites\Controllers\XBox\small_trigger_right.xnb
 Content\Fonts\7Th Service.xnb
 Content\Audio\Music\An_Infinite_Univers.xnb
 Content\Audio\Music\An_Infinite_Univers.wma
+Content\Audio\Music\Seeking-Revenge.xnb
+Content\Audio\Music\Seeking-Revenge.wma

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using BaseGame;
 using BaseGame.Actors.Pawns;
 using BaseGame.Actors.Sprites;
+using BaseGame.Audio;
 using BaseGame.Levels;
 using BaseGame.Resources;
 using BaseGame.Screens;
@@ -28,7 +29,7 @@ namespace StarMelee.Screens
         
 
         private readonly ShmupGameState _gameState;
-
+        private Music _music;
         private TextSprite Score;
         public Shmup()
         {
@@ -36,6 +37,7 @@ namespace StarMelee.Screens
             _level = new Level1(_gameState);
             _gameState.Player = new BasePlayerShip(_gameState, new PlayerDriver());
             Score = new TextSprite("fonts/LcdBold", Color.Goldenrod) { Format = "{0:000000000}" };
+            _music = new Music("Audio/Music/Seeking-Revenge");
             _gameState.Hud.Add(Score);
             
         }
@@ -47,7 +49,7 @@ namespace StarMelee.Screens
             ReasourceList.Add(_level);
             ReasourceList.Add(_gameState.Player);
             ReasourceList.Add(Score);
-
+            ReasourceList.Add(_music);
             foreach (var resource in Resource.Combine(ReasourceList))
             {
 
@@ -74,6 +76,7 @@ namespace StarMelee.Screens
                 new Vector3(0.0f, 0.0f, 30000.0f),
                 new Vector3(0.0f, 0.0f, 0.0f),
                 projection);
+            _music.Play();
         }
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
@@ -140,7 +143,7 @@ namespace StarMelee.Screens
             {
                 kernel.Unbind(resource.Type);
             }
-
+            _music.Stop();
             base.Dispose();
         }
 
