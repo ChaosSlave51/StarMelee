@@ -8,6 +8,7 @@ using BaseGame.Resources;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Graphics;
+using StarMelee.Collision;
 using StarMelee.Functions;
 
 namespace StarMelee.Actors.Pawns
@@ -41,6 +42,26 @@ namespace StarMelee.Actors.Pawns
         public BaseFunction DeathPath;
 
         protected State _currentState = State.Alive;
+        private int _maxLife;
+        private int _life;
+
+        public int MaxLife
+        {
+            get { return _maxLife; }
+            set { _maxLife = value;
+                Life = value;
+            }
+        }
+
+        public int Life
+        {
+            get { return _life; }
+            set { _life = value;
+            if (Life < 1)
+                Die();
+            }
+        }
+
 
         public State CurrentState
         {
@@ -138,7 +159,7 @@ namespace StarMelee.Actors.Pawns
         protected virtual void Setup()
         {
 
-
+            MaxLife = 1;
             DeathPath = new DeathSpiral() {Rotation = Rotation, Radious = 1000, Speed = 0.01f};
 
         }
@@ -157,6 +178,29 @@ namespace StarMelee.Actors.Pawns
         {
             var resources = Resource.Combine(Weapons);
             return resources.Concat(base.ResourcePaths());
+        }
+
+
+        public override void Collided(object o)
+        {
+            var lethal = o as ILethal;
+            if (lethal != null)
+            {
+                Die();
+                return;
+            }
+
+            var damaging = o as IDamaging;
+            if (damaging != null)
+            {
+                Life -= damaging.Damage;
+                DamagedFrames = 2;
+                return;
+            }
+
+            base.Collided(o);
+
+
         }
     }
     public enum State { Alive, Dying, Dead }

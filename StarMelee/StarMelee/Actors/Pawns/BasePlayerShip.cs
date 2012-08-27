@@ -79,10 +79,9 @@ namespace StarMelee.Actors.Pawns
         {
             base.Setup();
 
-            Weapons.Add(new BasePlayerWeapon(this, GameState)
-                                           {CooldownTime = 20, Position = new Vector3(0, 500, 0)});
-            Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 20, Position = new Vector3(500, 500, 0), Rotation = new Vector3(0,  0,MathHelper.Pi/10) });
-            Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 20, Position = new Vector3(-500, 500, 0), Rotation = new Vector3(0, 0, -MathHelper.Pi/10) });
+            Weapons.Add(new BasePlayerWeapon(this, GameState) {CooldownTime = 5, Position = new Vector3(0, 500, 0)});
+            Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 5, Position = new Vector3(500, 500, 0), Rotation = new Vector3(0,  0,MathHelper.Pi/10) });
+            Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 5, Position = new Vector3(-500, 500, 0), Rotation = new Vector3(0, 0, -MathHelper.Pi/10) });
         }
 
     }

@@ -7,18 +7,19 @@ using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using StarMelee.Collision;
 
 namespace StarMelee.Actors.Pawns
 {
-    class BaseBullet : BasePawn, INeedsResources
+    class BaseBullet : BasePawn, IDamaging
     {
-       
+        public int Damage { get; protected set; }
         public BaseBullet(Vector3 rotation = new Vector3())
             : base("Models/Ships/pea_proj",
             new FunctionDriver(new Forward() {Scale = 200},
                 rotation),rotation)
         {
-
+            Damage = 1;
             Scale = 1;
             CollisionSpheres = new List<Sphere>() { new Sphere(new Vector3(), 25) };
         }
@@ -32,7 +33,5 @@ namespace StarMelee.Actors.Pawns
     
 
         }
-
-
     }
 }

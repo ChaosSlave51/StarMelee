@@ -39,8 +39,8 @@ namespace BaseGame.Physics
                     {
                         if (SpheresIntersect(i1.Position - i1.Movement * (i / steps), s1, i2.Position - i2.Movement * (i / steps), s2))
                         {
-                            i1.Collided();
-                            i2.Collided();
+                            i1.Collided(i2);
+                            i2.Collided(i1);
                             return;
                         }
                     }

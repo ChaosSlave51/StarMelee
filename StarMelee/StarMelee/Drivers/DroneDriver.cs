@@ -11,12 +11,14 @@ namespace StarMelee.Drivers
 {
     class DroneDriver : IDriver<Ship>
     {
-    
-        private Wave _path;
+
+        private BaseFunction _path;
         public DroneDriver( Vector3 rotation)
         {
-            _path = new Wave() {Scale = 50, Amplitude = 1000, Frequency = 500, StartPhase = 0};
+
+            _path = new Wave() { Scale = 50, Amplitude = 1000, Frequency = 500, StartPhase = 0 };
             _path.Rotation = rotation;
+
         }
 
 

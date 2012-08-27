@@ -41,6 +41,7 @@ namespace StarMelee.Actors.Pawns
         {
             base.Setup();
 
+            MaxLife = 3;
 
             var weapon1 = new BaseEnemyWeapon(this, GameState);
             weapon1.CooldownTime = 50;

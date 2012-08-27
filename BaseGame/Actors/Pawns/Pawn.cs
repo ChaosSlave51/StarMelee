@@ -16,12 +16,12 @@ namespace BaseGame.Actors.Pawns
     {
         private readonly string _resourcePath;
         private Model MainModel;
-
+        protected int DamagedFrames = 0;
       
 
     
 #if DEBUG
-        private Model CollisionSphereModel;
+        private Model _collisionSphereModel;//sometimes not used if collision shere display is comented out
 #endif 
         public bool Alive = true;
         public bool Corporeal = true;
@@ -53,7 +53,7 @@ namespace BaseGame.Actors.Pawns
         protected override void ResolveResources()
         {
 #if DEBUG
-            CollisionSphereModel = ServiceLocator.Current.GetInstance<Model>("Models/Debug/sphere");
+            _collisionSphereModel = ServiceLocator.Current.GetInstance<Model>("Models/Debug/sphere");
 #endif 
             MainModel = ServiceLocator.Current.GetInstance<Model>(_resourcePath);
         }
@@ -65,9 +65,21 @@ namespace BaseGame.Actors.Pawns
 
             RenderModel(MainModel, camera,effect=>
                                               {
-                                                  
+
+                                                  //effect.FogEnabled = true;
+                                                  if (DamagedFrames>0)
+                                                  {
+                                                      effect.FogEnabled = true;
+                                                      effect.FogColor = Color.White.ToVector3();
+                                                      DamagedFrames--;
+                                                  }
+                                                  else
+                                                  {
+                                                      effect.FogEnabled = false;
+                                                    }
 
                                                   effect.EnableDefaultLighting();
+
                                                   effect.PreferPerPixelLighting = true;
 
                                                   //sets location of model
@@ -78,6 +90,7 @@ namespace BaseGame.Actors.Pawns
                                                   effect.Projection = camera.CamperaProjectionMatrix;
                                                   effect.View = camera.CameraViewMatrix;
                                               });
+            
 #if DEBUG
             //if (Corporeal)
             //{
@@ -134,7 +147,7 @@ namespace BaseGame.Actors.Pawns
 
         public virtual List<Sphere> CollisionSpheres { get; set; }
 
-        public virtual void Collided()
+        public virtual void Collided(object o)
         {
             Die();
         }
