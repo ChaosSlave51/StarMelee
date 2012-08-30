@@ -9,7 +9,9 @@ namespace BaseGame
         public Matrix CamperaProjectionMatrix
         {
             get { return _camperaProjectionMatrix; }
-            set { _camperaProjectionMatrix = value; }
+            set { _camperaProjectionMatrix = value;
+                _bindingFrustum = null;
+            }
         }
         
         private Matrix _cameraViewMatrix;
@@ -18,6 +20,7 @@ namespace BaseGame
             get
             {
                 return _cameraViewMatrix;
+
             }
         }
 
@@ -54,9 +57,22 @@ namespace BaseGame
         private void setCameraViewMatrix()
         {
             _cameraViewMatrix = Matrix.CreateLookAt(_cameraPosition, _cameraLookAt, Vector3.Up);
+            _bindingFrustum = null;
         }
 
-                
-        
+        private BoundingFrustum _bindingFrustum = null;
+        public BoundingFrustum BindingFrustum 
+        {
+            get
+            {
+                if(_bindingFrustum==null)
+                {
+                    _bindingFrustum = new BoundingFrustum(_cameraViewMatrix * _camperaProjectionMatrix);
+                }
+                return _bindingFrustum;
+            }
+        }
+
+
     }
 }

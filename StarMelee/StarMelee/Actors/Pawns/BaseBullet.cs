@@ -25,17 +25,7 @@ namespace StarMelee.Actors.Pawns
             }
             Damage = 1;
             Scale = 1;
-            CollisionSpheres = new List<Sphere>() { new Sphere(new Vector3(), 25) };
-        }
-
-        public override void Update(float time)
-        {
-            base.Update(time);
-
-            if (Position.Length() > 20000)
-                Kill();
-
-
+            CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 25) };
         }
     }
 }

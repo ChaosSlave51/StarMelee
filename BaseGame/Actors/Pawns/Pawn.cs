@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using BaseGame.Drivers;
+using BaseGame.Physics;
 using BaseGame.Resources;
 using Microsoft.Practices.ServiceLocation;
 using Microsoft.Xna.Framework;
@@ -17,7 +18,7 @@ namespace BaseGame.Actors.Pawns
         private readonly string _resourcePath;
         protected Model MainModel;
         protected int DamagedFrames = 0;
-      
+        public CollisionHelper CollisionsHelper;
 
     
 #if DEBUG
@@ -44,7 +45,7 @@ namespace BaseGame.Actors.Pawns
         public BasePawn(string resourcePath, IDriver driver = null, Vector3 rotation= new Vector3())
         {
             _resourcePath = resourcePath;
-
+            CollisionsHelper = ServiceLocator.Current.GetInstance<CollisionHelper>();
 
             Movement = new Vector3();
             Driver = driver;
@@ -149,10 +150,11 @@ namespace BaseGame.Actors.Pawns
      
         }
 
-        public virtual List<Sphere> CollisionSpheres { get; set; }
+        public virtual List<BoundingSphere> CollisionSpheres { get; set; }
 
         public virtual void Collided(object o)
         {
+
             Die();
         }
         public virtual bool Die()
@@ -173,6 +175,12 @@ namespace BaseGame.Actors.Pawns
             Alive = false;
         }
 
+
+
+        public bool OnCamera(Camera camera, Vector3 offset= new Vector3())
+        {
+            return CollisionsHelper.OnCamera(this, camera, offset);
+        }
 
         public virtual IEnumerable<Resource> ResourcePaths()
         {

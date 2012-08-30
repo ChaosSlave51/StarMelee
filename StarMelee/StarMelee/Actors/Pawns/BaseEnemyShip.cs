@@ -23,7 +23,7 @@ namespace StarMelee.Actors.Pawns
 
             BaseRotation = new Vector3(MathHelper.PiOver2, 0, 0);
             BaseScale = 0.5f;
-            CollisionSpheres= new List<Sphere>(){new Sphere(new Vector3(),500 )};
+            CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 500) };
 
            
         }

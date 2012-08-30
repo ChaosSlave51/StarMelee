@@ -5,6 +5,7 @@ using BaseGame.Actors.Pawns;
 using BaseGame.Actors.Sprites;
 using BaseGame.Audio;
 using BaseGame.Levels;
+using BaseGame.Physics;
 using BaseGame.Resources;
 using BaseGame.Screens;
 using CommonServiceLocator.NinjectAdapter;
@@ -25,15 +26,18 @@ namespace StarMelee.Screens
 
         ILevel _level;
         //end temp
-        
-        
 
+
+        
         private readonly ShmupGameState _gameState;
         private Music _music;
         private TextSprite Score;
         public Shmup()
         {
+            
+
             _gameState= new ShmupGameState();
+           
             _level = new Level1(_gameState);
             _gameState.Player = new BasePlayerShip(_gameState, new PlayerDriver());
             Score = new TextSprite("fonts/LcdBold", Color.Goldenrod) { Format = "{0:000000000}" };
@@ -76,12 +80,27 @@ namespace StarMelee.Screens
                 new Vector3(0.0f, 0.0f, 30000.0f),
                 new Vector3(0.0f, 0.0f, 0.0f),
                 projection);
+            _gameState.MainCamera = CameraMain;
             _music.Play();
         }
 
         public override void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
             float time = GetTimecksFromTime(gameTime);
+            _gameState.EnemyBullets.ForEach(x=>
+                {
+                    if(!x.OnCamera(CameraMain))
+                    {
+                        x.Kill();
+                    }
+                });
+            _gameState.PlayerBullets.ForEach(x =>
+            {
+                if (!x.OnCamera(CameraMain))
+                {
+                    x.Kill();
+                }
+            });
             _gameState.EachPawn(pawn =>
                                     {
                                         if (pawn.Alive)
@@ -89,7 +108,7 @@ namespace StarMelee.Screens
                                             pawn.Update(time);
                                         }
                                     });
-            if (_gameState.PawnCount > 0)
+            if (_gameState.PawnCount > 1000)
             {
                 _gameState.RemoveDeadPawns();
             }

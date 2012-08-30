@@ -163,7 +163,6 @@
     <Compile Include="Resources\INeedsResources.cs" />
     <Compile Include="Resources\Resource.cs" />
     <Compile Include="Screens\BaseScreen.cs" />
-    <Compile Include="Sphere.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

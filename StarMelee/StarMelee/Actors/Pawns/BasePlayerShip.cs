@@ -17,12 +17,14 @@ namespace StarMelee.Actors.Pawns
 {
     class BasePlayerShip : Ship
     {
+        private readonly ShmupGameState _gameState;
 
         public BasePlayerShip(ShmupGameState gameState,IDriver<BasePlayerShip> driver)
             : base("Models/Ships/p1_saucer", gameState, driver)
         {
+            _gameState = gameState;
             BaseRotation = new Vector3(MathHelper.PiOver2, 0, 0);
-            CollisionSpheres = new List<Sphere>() { new Sphere(new Vector3(), 700) };
+            CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 700) };
 
              SpeedSide=100.0f;
              SpeedForward = 100.0f;
@@ -74,7 +76,26 @@ namespace StarMelee.Actors.Pawns
                 Movement += new Vector3(0, - SpeedBack, 0);
             }
         }
+        public override void Update(float time)
+        {
+            if (this.CurrentState == State.Alive)
+            {
+                if (!this.OnCamera(_gameState.MainCamera,new Vector3(Movement.X,0,0)))
+                {
+                    Movement= new Vector3(0,Movement.Y,Movement.Z);
+                }
+                if (!this.OnCamera(_gameState.MainCamera, new Vector3(0, Movement.Y, 0)))
+                {
+                    Movement = new Vector3(Movement.X, 0, Movement.Z);
+                }
+                if (!this.OnCamera(_gameState.MainCamera, new Vector3(0, 0, Movement.Z)))
+                {
+                    Movement = new Vector3(Movement.X, Movement.Y, 0);
+                }
+            }
 
+            base.Update(time);
+        }
         protected override void Setup()
         {
             base.Setup();

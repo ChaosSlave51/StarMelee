@@ -33,7 +33,7 @@ namespace BaseGame.Physics
 
             for (float i = 0; i < steps; i++)//this loop is the sub steps of the physics
             {
-                foreach (Sphere s1 in i1.CollisionSpheres)
+                foreach (BoundingSphere s1 in i1.CollisionSpheres)
                 {
                     foreach (var s2 in i2.CollisionSpheres)
                     {
@@ -48,10 +48,18 @@ namespace BaseGame.Physics
             }
         }
 
-        private bool SpheresIntersect(Vector3 p1, Sphere s1, Vector3 p2, Sphere s2)
+        private bool SpheresIntersect(Vector3 p1, BoundingSphere s1, Vector3 p2, BoundingSphere s2)
         {
-            var distance = p1 + s1.Position - (p2 + s2.Position);
-            return distance.Length() < s1.Radius + s2.Radius;
+            var shere1 = s1.Transform(Matrix.CreateTranslation(p1));
+            var shere2 = s2.Transform(Matrix.CreateTranslation(p2));
+            return shere1.Intersects(shere2);
+        }
+
+        public bool OnCamera(BasePawn pawn, Camera camera, Vector3 offset)
+        {
+            return pawn.CollisionSpheres.All(
+                x => camera.BindingFrustum.Contains(x.Transform(Matrix.CreateTranslation(pawn.Position + offset))) == ContainmentType.Contains
+            );
         }
     }
 

@@ -42,6 +42,9 @@ namespace StarMelee
             get { return PlayerBullets.Count + EnemyShips.Count + EnemyBullets.Count; }
 
         }
+
+        public Camera MainCamera{get; set; }
+
         public void EachSprite(Action<BaseSprite> action)
         {
             Hud.ForEach(x => action(x));
@@ -66,7 +69,6 @@ namespace StarMelee
             CollisionsHelper.CheckCollisions(Player, EnemyBullets);
             CollisionsHelper.CheckCollisions(Player, EnemyShips);
             CollisionsHelper.CheckCollisions(PlayerBullets, EnemyShips);
-
         }
 
       
