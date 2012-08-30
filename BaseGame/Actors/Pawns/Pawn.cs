@@ -15,7 +15,7 @@ namespace BaseGame.Actors.Pawns
     public abstract class BasePawn : BaseActor,INeedsResources
     {
         private readonly string _resourcePath;
-        private Model MainModel;
+        protected Model MainModel;
         protected int DamagedFrames = 0;
       
 
@@ -29,7 +29,8 @@ namespace BaseGame.Actors.Pawns
         {
             get { return _driver; }
             set { _driver = value;
-             updateMethod = Driver.GetType().GetMethod("Update");
+                if(value!=null)
+                    updateMethod = value.GetType().GetMethod("Update");
             }
         }
 
@@ -56,6 +57,7 @@ namespace BaseGame.Actors.Pawns
             _collisionSphereModel = ServiceLocator.Current.GetInstance<Model>("Models/Debug/sphere");
 #endif 
             MainModel = ServiceLocator.Current.GetInstance<Model>(_resourcePath);
+
         }
 
         public void Draw(Camera camera)
@@ -65,18 +67,20 @@ namespace BaseGame.Actors.Pawns
 
             RenderModel(MainModel, camera,effect=>
                                               {
-
+                                                  
                                                   //effect.FogEnabled = true;
                                                   if (DamagedFrames>0)
                                                   {
-                                                      effect.FogEnabled = true;
-                                                      effect.FogColor = Color.White.ToVector3();
+                                                      effect.EmissiveColor = new Vector3(1, 1, 1);
+                                                      //effect.FogEnabled = true;
+                                                      //effect.FogColor = Color.White.ToVector3();
                                                       DamagedFrames--;
                                                   }
                                                   else
                                                   {
-                                                      effect.FogEnabled = false;
-                                                    }
+                                                      effect.EmissiveColor = new Vector3(0, 0, 0);
+                                                      //effect.FogEnabled = false;
+                                                  }
 
                                                   effect.EnableDefaultLighting();
 

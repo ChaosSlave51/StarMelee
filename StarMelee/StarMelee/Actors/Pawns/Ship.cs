@@ -53,6 +53,23 @@ namespace StarMelee.Actors.Pawns
             }
         }
 
+        protected override void ResolveResources()
+        {
+            base.ResolveResources();
+            foreach (ModelMesh mesh in MainModel.Meshes)
+            {
+                foreach (BasicEffect effect in mesh.Effects)
+                {
+                    effect.FogEnabled = true;
+                    effect.FogColor = Color.Azure.ToVector3();
+                    effect.FogStart = 30000f;
+                    effect.FogEnd = 100000f;
+                }
+                mesh.Draw();
+            }
+        }
+
+
         public int Life
         {
             get { return _life; }

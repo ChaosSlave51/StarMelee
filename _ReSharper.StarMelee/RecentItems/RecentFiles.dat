@@ -1,10 +1,5 @@
 ﻿<RecentFiles>
   <RecentFiles>
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Levels/f:Level1.cs" caret="2437" fromTop="16" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Levels/f:ShmupLevel.cs" caret="251" fromTop="10" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Levels/f:ILevel.cs" caret="52" fromTop="1" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:ShmupGameState.cs" caret="0" fromTop="0" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:IOC/f:GameModule.cs" caret="0" fromTop="0" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:BaseGame.cs" caret="2826" fromTop="20" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/f:BaseActor.cs" caret="1175" fromTop="20" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Sprites/f:BaseSprite.cs" caret="229" fromTop="9" />
@@ -14,26 +9,29 @@
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:IOC/f:StarMeleeModule.cs" caret="410" fromTop="7" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Resources/f:Resource.cs" caret="485" fromTop="18" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Director.cs" caret="807" fromTop="20" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Screens/f:BaseScreen.cs" caret="679" fromTop="24" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Audio/f:Music.cs" caret="987" fromTop="27" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Opening.cs" caret="2667" fromTop="29" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Functions/f:Wave.cs" caret="193" fromTop="8" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BaseEnemyShip.cs" caret="445" fromTop="14" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BaseBullet.cs" caret="541" fromTop="11" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Collision/f:IDamanging.cs" caret="191" fromTop="10" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Collision/f:ILethal.cs" caret="154" fromTop="8" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Physics/f:CollisionHelper.cs" caret="1431" fromTop="22" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Shmup.cs" caret="4664" fromTop="144" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Drivers/f:DroneDriver.cs" caret="594" fromTop="26" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Functions/f:BaseFunction.cs" caret="221" fromTop="9" />
+    <File id="0192AB60-677E-4245-BE0C-0CF80B5123FA/d:Models/d:Ships/f:p1_saucer.fbx" caret="626134" fromTop="29" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:Camera.cs" caret="74" fromTop="4" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Screens/f:BaseScreen.cs" caret="286" fromTop="0" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Shmup.cs" caret="2402" fromTop="27" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BasePlayerShip.cs" caret="2112" fromTop="64" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/f:BasePlayerWeapon.cs" caret="528" fromTop="19" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Pawns/f:Pawn.cs" caret="2302" fromTop="19" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="5608" fromTop="19" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="2111" fromTop="43" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/f:BasePlayerWeapon.cs" caret="1870" fromTop="32" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BaseBullet.cs" caret="447" fromTop="16" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/f:BaseEnemyWeapon.cs" caret="1608" fromTop="20" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:PlayerBullet.cs" caret="786" fromTop="19" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:Sphere.cs" caret="169" fromTop="8" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Pawns/f:Pawn.cs" caret="6736" fromTop="29" />
   </RecentFiles>
   <RecentEdits>
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Sprites/f:BaseSprite.cs" caret="365" fromTop="14" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/f:BaseGame.cs" caret="1404" fromTop="23" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Resources/f:INeedsResources.cs" caret="198" fromTop="9" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Levels/f:Wave.cs" caret="1127" fromTop="15" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Program.cs" caret="825" fromTop="25" />
@@ -45,7 +43,6 @@
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/f:BaseEnemyWeapon.cs" caret="1749" fromTop="20" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Sprites/f:TextSprite.cs" caret="1058" fromTop="33" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/f:BaseActor.cs" caret="1311" fromTop="25" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/f:BasePlayerWeapon.cs" caret="365" fromTop="14" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:IOC/f:StarMeleeModule.cs" caret="1622" fromTop="26" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Sprites/f:StillSprite.cs" caret="837" fromTop="24" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/f:Director.cs" caret="1025" fromTop="27" />
@@ -55,12 +52,14 @@
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Screens/f:Shmup.cs" caret="4692" fromTop="22" />
     <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Physics/f:CollisionHelper.cs" caret="1440" fromTop="22" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Collision/f:ILethal.cs" caret="163" fromTop="8" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BaseBullet.cs" caret="439" fromTop="9" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Collision/f:IDamanging.cs" caret="191" fromTop="10" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BaseEnemyShip.cs" caret="445" fromTop="14" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Drivers/f:DroneDriver.cs" caret="521" fromTop="19" />
     <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BasePlayerShip.cs" caret="2715" fromTop="27" />
-    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Pawns/f:Pawn.cs" caret="2302" fromTop="19" />
-    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="5608" fromTop="19" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:Ship.cs" caret="2111" fromTop="35" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:BaseBullet.cs" caret="504" fromTop="16" />
+    <File id="00B4F503-6B07-4454-B7AC-7C98E5DFD099/d:Actors/d:Pawns/f:Pawn.cs" caret="716" fromTop="16" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/f:BasePlayerWeapon.cs" caret="1870" fromTop="30" />
+    <File id="FCEB1F4E-980F-4DD1-9FB6-CEBA47231F2B/d:Actors/d:Pawns/f:PlayerBullet.cs" caret="786" fromTop="19" />
   </RecentEdits>
 </RecentFiles>

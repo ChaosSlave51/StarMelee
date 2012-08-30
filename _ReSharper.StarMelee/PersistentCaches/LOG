@@ -1,5 +1,5 @@
-2012/08/26-12:35:03.816 1acc Recovering log #61
-2012/08/26-12:35:03.816 1acc Level-0 table #63: started
-2012/08/26-12:35:03.835 1acc Level-0 table #63: 1681 bytes OK
-2012/08/26-12:35:03.880 1acc Delete type=0 #61
-2012/08/26-12:35:03.881 1acc Delete type=3 #59
+2012/08/29-20:57:26.181 1ae4 Recovering log #74
+2012/08/29-20:57:26.224 1ae4 Level-0 table #76: started
+2012/08/29-20:57:26.341 1ae4 Level-0 table #76: 16247 bytes OK
+2012/08/29-20:57:26.402 1ae4 Delete type=0 #74
+2012/08/29-20:57:26.403 1ae4 Delete type=3 #72

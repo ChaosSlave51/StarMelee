@@ -412,6 +412,538 @@
       <Extra>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\Seeking-Revenge.wma</Extra>
       <Time>2012-08-26T12:08:53.8704-04:00</Time>
     </Item>
+    <Item>
+      <Source>Models\Ships\p1_wedge.fbx</Source>
+      <Name>Models\Ships\p1_wedge</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_wedge.xnb</Output>
+      <Time>2012-08-28T22:57:12.9714-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\Ships\p1_wedge_0.xml</Key>
+        <Value>2012-08-28T22:57:17.8844-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p1_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p1_wedge.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\Ships\p1_wedge_0.xml</Output>
+      <Time>2012-08-28T22:57:12.9714-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\asteroid1.tga</Source>
+      <Name>Models\Textures\asteroid1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\asteroid1.xnb</Output>
+      <Time>2012-08-28T22:57:35.8674-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\asteroid1N.tga</Source>
+      <Name>Models\Textures\asteroid1N</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\asteroid1N.xnb</Output>
+      <Time>2012-08-28T22:57:35.9314-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\asteroid2.tga</Source>
+      <Name>Models\Textures\asteroid2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\asteroid2.xnb</Output>
+      <Time>2012-08-28T22:57:35.9584-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\bfg_proj.tga</Source>
+      <Name>Models\Textures\bfg_proj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\bfg_proj.xnb</Output>
+      <Time>2012-08-28T22:57:36.0374-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\black.tga</Source>
+      <Name>Models\Textures\black</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\black.xnb</Output>
+      <Time>2012-08-28T22:57:36.0384-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\circle.tga</Source>
+      <Name>Models\Textures\circle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\circle.xnb</Output>
+      <Time>2012-08-28T22:57:36.0514-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\in-game_score_overlay.tga</Source>
+      <Name>Models\Textures\in-game_score_overlay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\in-game_score_overlay.xnb</Output>
+      <Time>2012-08-28T22:57:36.0604-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\info_screen.tga</Source>
+      <Name>Models\Textures\info_screen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\info_screen.xnb</Output>
+      <Time>2012-08-28T22:57:36.0874-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\mgun_proj.tga</Source>
+      <Name>Models\Textures\mgun_proj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\mgun_proj.xnb</Output>
+      <Time>2012-08-28T22:57:36.0894-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p1_back.tga</Source>
+      <Name>Models\Textures\p1_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p1_back.xnb</Output>
+      <Time>2012-08-28T22:57:36.1024-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p1_bfg.tga</Source>
+      <Name>Models\Textures\p1_bfg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p1_bfg.xnb</Output>
+      <Time>2012-08-28T22:57:36.1234-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p1_dual.tga</Source>
+      <Name>Models\Textures\p1_dual</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p1_dual.xnb</Output>
+      <Time>2012-08-28T22:57:36.1384-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p1_reflection_cubemap.dds</Source>
+      <Name>Models\Textures\p1_reflection_cubemap</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p1_reflection_cubemap.xnb</Output>
+      <Time>2012-08-28T22:57:36.1504-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p1_rocket.tga</Source>
+      <Name>Models\Textures\p1_rocket</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p1_rocket.xnb</Output>
+      <Time>2012-08-28T22:57:36.1514-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p2_back.tga</Source>
+      <Name>Models\Textures\p2_back</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p2_back.xnb</Output>
+      <Time>2012-08-28T22:57:36.1784-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p2_bfg.tga</Source>
+      <Name>Models\Textures\p2_bfg</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p2_bfg.xnb</Output>
+      <Time>2012-08-28T22:57:36.1954-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p2_dual.tga</Source>
+      <Name>Models\Textures\p2_dual</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p2_dual.xnb</Output>
+      <Time>2012-08-28T22:57:36.2134-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p2_reflection_cubemap1.dds</Source>
+      <Name>Models\Textures\p2_reflection_cubemap1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p2_reflection_cubemap1.xnb</Output>
+      <Time>2012-08-28T22:57:36.2384-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p2_reflection_cubemap2.dds</Source>
+      <Name>Models\Textures\p2_reflection_cubemap2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p2_reflection_cubemap2.xnb</Output>
+      <Time>2012-08-28T22:57:36.2534-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\p2_rocket.tga</Source>
+      <Name>Models\Textures\p2_rocket</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\p2_rocket.xnb</Output>
+      <Time>2012-08-28T22:57:36.2664-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\pea_proj.tga</Source>
+      <Name>Models\Textures\pea_proj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\pea_proj.xnb</Output>
+      <Time>2012-08-28T22:57:36.2774-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\pencil_p1_diff_v1.tga</Source>
+      <Name>Models\Textures\pencil_p1_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\pencil_p1_diff_v1.xnb</Output>
+      <Time>2012-08-28T22:57:36.2954-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\pencil_p1_diff_v2.tga</Source>
+      <Name>Models\Textures\pencil_p1_diff_v2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\pencil_p1_diff_v2.xnb</Output>
+      <Time>2012-08-28T22:57:36.3134-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\pencil_p1_diff_v3.tga</Source>
+      <Name>Models\Textures\pencil_p1_diff_v3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\pencil_p1_diff_v3.xnb</Output>
+      <Time>2012-08-28T22:57:36.3234-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\pencil_p2_diff_v1.tga</Source>
+      <Name>Models\Textures\pencil_p2_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\pencil_p2_diff_v1.xnb</Output>
+      <Time>2012-08-28T22:57:36.3354-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\pencil_p2_diff_v2.tga</Source>
+      <Name>Models\Textures\pencil_p2_diff_v2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\pencil_p2_diff_v2.xnb</Output>
+      <Time>2012-08-28T22:57:36.3824-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\pencil_p2_diff_v3.tga</Source>
+      <Name>Models\Textures\pencil_p2_diff_v3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\pencil_p2_diff_v3.xnb</Output>
+      <Time>2012-08-28T22:57:36.4424-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\rocket_proj.tga</Source>
+      <Name>Models\Textures\rocket_proj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\rocket_proj.xnb</Output>
+      <Time>2012-08-28T22:57:36.5094-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\saucer_p1_diff_v1.tga</Source>
+      <Name>Models\Textures\saucer_p1_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\saucer_p1_diff_v1.xnb</Output>
+      <Time>2012-08-28T22:57:36.5404-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\saucer_p1_diff_v2.tga</Source>
+      <Name>Models\Textures\saucer_p1_diff_v2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\saucer_p1_diff_v2.xnb</Output>
+      <Time>2012-08-28T22:57:36.6074-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\saucer_p1_diff_v3.tga</Source>
+      <Name>Models\Textures\saucer_p1_diff_v3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\saucer_p1_diff_v3.xnb</Output>
+      <Time>2012-08-28T22:57:36.6104-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\saucer_p2_diff_v1.tga</Source>
+      <Name>Models\Textures\saucer_p2_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\saucer_p2_diff_v1.xnb</Output>
+      <Time>2012-08-28T22:57:36.6574-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\saucer_p2_diff_v2.tga</Source>
+      <Name>Models\Textures\saucer_p2_diff_v2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\saucer_p2_diff_v2.xnb</Output>
+      <Time>2012-08-28T22:57:36.6734-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\saucer_p2_diff_v3.tga</Source>
+      <Name>Models\Textures\saucer_p2_diff_v3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\saucer_p2_diff_v3.xnb</Output>
+      <Time>2012-08-28T22:57:36.6844-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\suntest1.tga</Source>
+      <Name>Models\Textures\suntest1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\suntest1.xnb</Output>
+      <Time>2012-08-28T22:57:36.7154-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\suntest2.tga</Source>
+      <Name>Models\Textures\suntest2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\suntest2.xnb</Output>
+      <Time>2012-08-28T22:57:36.7284-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\suntest3.tga</Source>
+      <Name>Models\Textures\suntest3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\suntest3.xnb</Output>
+      <Time>2012-08-28T22:57:36.7444-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\suntest4.tga</Source>
+      <Name>Models\Textures\suntest4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\suntest4.xnb</Output>
+      <Time>2012-08-28T22:57:36.7634-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\suntest5.tga</Source>
+      <Name>Models\Textures\suntest5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\suntest5.xnb</Output>
+      <Time>2012-08-28T22:57:36.7774-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\thrust_stripSmall.tga</Source>
+      <Name>Models\Textures\thrust_stripSmall</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\thrust_stripSmall.xnb</Output>
+      <Time>2012-08-28T22:57:36.7914-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\Title_button_overlay.tga</Source>
+      <Name>Models\Textures\Title_button_overlay</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\Title_button_overlay.xnb</Output>
+      <Time>2012-08-28T22:57:36.8564-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\wedge_p1_diff_v1.tga</Source>
+      <Name>Models\Textures\wedge_p1_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\wedge_p1_diff_v1.xnb</Output>
+      <Time>2012-08-28T22:57:36.9274-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\wedge_p1_diff_v2.tga</Source>
+      <Name>Models\Textures\wedge_p1_diff_v2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\wedge_p1_diff_v2.xnb</Output>
+      <Time>2012-08-28T22:57:36.9414-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\wedge_p1_diff_v3.tga</Source>
+      <Name>Models\Textures\wedge_p1_diff_v3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\wedge_p1_diff_v3.xnb</Output>
+      <Time>2012-08-28T22:57:36.9594-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\wedge_p2_diff_v1.tga</Source>
+      <Name>Models\Textures\wedge_p2_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\wedge_p2_diff_v1.xnb</Output>
+      <Time>2012-08-28T22:57:36.9734-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\wedge_p2_diff_v2.tga</Source>
+      <Name>Models\Textures\wedge_p2_diff_v2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\wedge_p2_diff_v2.xnb</Output>
+      <Time>2012-08-28T22:57:36.9874-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\wedge_p2_diff_v3.tga</Source>
+      <Name>Models\Textures\wedge_p2_diff_v3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\wedge_p2_diff_v3.xnb</Output>
+      <Time>2012-08-28T22:57:37.0004-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\B1_nebula01.jpg</Source>
+      <Name>Models\Textures\B1_nebula01</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\B1_nebula01.xnb</Output>
+      <Time>2012-08-28T22:57:35.9874-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\B1_nebula02.jpg</Source>
+      <Name>Models\Textures\B1_nebula02</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\B1_nebula02.xnb</Output>
+      <Time>2012-08-28T22:57:36.0164-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\B1_stars.jpg</Source>
+      <Name>Models\Textures\B1_stars</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\B1_stars.xnb</Output>
+      <Time>2012-08-28T22:57:36.0254-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\retro_backdrop.jpg</Source>
+      <Name>Models\Textures\retro_backdrop</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\retro_backdrop.xnb</Output>
+      <Time>2012-08-28T22:57:36.4614-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\ship_select_FINAL.png</Source>
+      <Name>Models\Textures\ship_select_FINAL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\ship_select_FINAL.xnb</Output>
+      <Time>2012-08-28T22:57:36.6914-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\Spacewar_Title_FINAL.jpg</Source>
+      <Name>Models\Textures\Spacewar_Title_FINAL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\Spacewar_Title_FINAL.xnb</Output>
+      <Time>2012-08-28T22:57:36.7074-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\victory.png</Source>
+      <Name>Models\Textures\victory</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\victory.xnb</Output>
+      <Time>2012-08-28T22:57:36.8794-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Textures\weapon_select_FINAL.png</Source>
+      <Name>Models\Textures\weapon_select_FINAL</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\weapon_select_FINAL.xnb</Output>
+      <Time>2012-08-28T22:57:36.9234-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\textures\wedge_p1_diff_v1.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p1_diff_v1_0.xnb</Output>
+      <Time>2012-08-28T22:57:36.9274-04:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

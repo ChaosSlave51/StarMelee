@@ -35,7 +35,7 @@ namespace StarMelee.Actors
             ResolveResourcesIfNeeded();
             if (Cooldown == 0)
             {
-                BaseBullet baseBullet = new BaseBullet(new Vector3(ParentShip.Rotation.X + Rotation.X, 0, ParentShip.Rotation.Z + Rotation.Z));
+                BaseBullet baseBullet = new PlayerBullet(new Vector3(ParentShip.Rotation.X + Rotation.X, 0, ParentShip.Rotation.Z + Rotation.Z));
                 //Matrix rotationMatrix = Matrix.CreateFromYawPitchRoll(ParentShip.Rotation.Y + Rotation.Y, ParentShip.Rotation.X + Rotation.X, ParentShip.Rotation.Z + Rotation.Z);
 
                 baseBullet.Position = ParentShip.TotalPosition; //+ Vector3.Transform(Position, rotationMatrix);
@@ -56,7 +56,7 @@ namespace StarMelee.Actors
 
         public IEnumerable<Resource> ResourcePaths()
         {
-            BaseBullet baseBullet = new BaseBullet();
+            BaseBullet baseBullet = new PlayerBullet();
             IEnumerable<Resource> resources = baseBullet.ResourcePaths();
             return resources.Concat(new Resource[]{new Resource("Audio/Weapons/laser-zap-01", typeof (SoundEffect))});
 
