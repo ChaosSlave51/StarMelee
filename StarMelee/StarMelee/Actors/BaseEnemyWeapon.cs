@@ -15,7 +15,7 @@ namespace StarMelee.Actors
     {
         public Ship ParentShip = null;
         public int CooldownTime=0;
-        public int Cooldown = 0;
+        protected int Cooldown = 0;
         private readonly ShmupGameState _gameState;
 
         protected SoundEffect DeathSound;      
@@ -32,10 +32,10 @@ namespace StarMelee.Actors
         {
             if (Cooldown == 0)
             {
-                BaseBullet baseBullet = new BaseBullet(ParentShip.Rotation);
-                Matrix rotationMatrix = Matrix.CreateFromYawPitchRoll(ParentShip.Rotation.Y, ParentShip.Rotation.X, ParentShip.Rotation.Z);
+                BaseBullet baseBullet = new BaseBullet(new Vector3(ParentShip.Rotation.X + Rotation.X, 0, ParentShip.Rotation.Z + Rotation.Z));
+                //Matrix rotationMatrix = Matrix.CreateFromYawPitchRoll(ParentShip.Rotation.Y, ParentShip.Rotation.X, ParentShip.Rotation.Z);
 
-                baseBullet.Position = ParentShip.TotalPosition + Vector3.Transform(Position, rotationMatrix);
+                baseBullet.Position = ParentShip.TotalPosition; //+ Vector3.Transform(Position, rotationMatrix);
                 
                 
 

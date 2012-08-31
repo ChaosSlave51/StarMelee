@@ -142,7 +142,7 @@
     <Compile Include="Functions\Wave.cs" />
     <Compile Include="GameState.cs" />
     <Compile Include="helper.cs" />
-    <Compile Include="Actors\Pawns\Pawn.cs" />
+    <Compile Include="Actors\Pawns\BasePawn.cs" />
     <Compile Include="Camera.cs" />
     <Compile Include="Actors\ParticleEmitter.cs" />
     <Compile Include="IDirector.cs" />

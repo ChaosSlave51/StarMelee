@@ -124,3 +124,11 @@ C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMe
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\victory.xnb
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Textures\weapon_select_FINAL.xnb
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p1_diff_v1_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Shaders\MotionBlur.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_rocket.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_saucer.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_wedge.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\p2_rocket_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\p2_back_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\saucer_p2_diff_v1_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p2_diff_v1_0.xnb

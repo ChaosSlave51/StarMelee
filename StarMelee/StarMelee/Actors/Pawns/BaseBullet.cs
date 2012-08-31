@@ -27,5 +27,8 @@ namespace StarMelee.Actors.Pawns
             Scale = 1;
             CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 25) };
         }
+
+
+
     }
 }

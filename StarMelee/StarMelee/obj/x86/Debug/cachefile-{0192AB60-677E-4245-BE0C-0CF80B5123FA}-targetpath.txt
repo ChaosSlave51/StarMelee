@@ -1,5 +1,4 @@
 Content\Models\Ships\p1_rocket.xnb
-Content\Models\Ships\pea_proj.xnb
 Content\Textures\Ships\p1_back.xnb
 Content\Textures\Ships\p1_rocket.xnb
 Content\Textures\Ships\saucer_p1_diff_v1.xnb
@@ -94,3 +93,12 @@ Content\Models\Textures\Spacewar_Title_FINAL.xnb
 Content\Models\Textures\victory.xnb
 Content\Models\Textures\weapon_select_FINAL.xnb
 Content\Models\textures\wedge_p1_diff_v1_0.xnb
+Content\Shaders\MotionBlur.xnb
+Content\Models\Ships\pea_proj.xnb
+Content\Models\Ships\p2_rocket.xnb
+Content\Models\Ships\p2_saucer.xnb
+Content\Models\Ships\p2_wedge.xnb
+Content\Models\textures\p2_rocket_0.xnb
+Content\Models\textures\p2_back_0.xnb
+Content\Models\textures\saucer_p2_diff_v1_0.xnb
+Content\Models\textures\wedge_p2_diff_v1_0.xnb

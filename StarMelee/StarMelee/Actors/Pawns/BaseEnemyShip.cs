@@ -17,15 +17,15 @@ namespace StarMelee.Actors.Pawns
     class BaseEnemyShip : Ship
     {
 
-        public BaseEnemyShip(ShmupGameState gameState,Vector3 rotation=new Vector3())
-            : base("Models/Ships/p1_saucer", gameState, new DroneDriver(rotation), rotation)//
+        public BaseEnemyShip(ShmupGameState gameState, Vector3 rotation = new Vector3(), string modelPath = "Models/Ships/p1_saucer")
+            : base(modelPath, gameState, null, rotation)//
         {
 
             BaseRotation = new Vector3(MathHelper.PiOver2, 0, 0);
             BaseScale = 0.5f;
             CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 500) };
+            Driver = new DroneDriver(rotation);
 
-           
         }
         protected override void ResolveResources()
         {
@@ -42,7 +42,7 @@ namespace StarMelee.Actors.Pawns
             base.Setup();
 
             MaxLife = 3;
-
+            PointValue = 100;
             var weapon1 = new BaseEnemyWeapon(this, GameState);
             weapon1.CooldownTime = 50;
 

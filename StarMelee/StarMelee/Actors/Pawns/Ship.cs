@@ -17,7 +17,7 @@ namespace StarMelee.Actors.Pawns
     {
         protected readonly ShmupGameState GameState;
 
-
+        public int PointValue = 0;
         public Ship(string resourcePath, ShmupGameState gameState, IDriver driver = null, Vector3 rotation = new Vector3())
             : base(resourcePath, driver, rotation)
         {
@@ -33,7 +33,7 @@ namespace StarMelee.Actors.Pawns
         public float EnterBankTime = 20;
         public float ExitBankTime = 40;
 
-        public int PointValue = 100;
+      
 
 
         public List<IWeapon> Weapons = new List<IWeapon>();

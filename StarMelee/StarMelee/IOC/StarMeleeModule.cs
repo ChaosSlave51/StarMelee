@@ -40,7 +40,7 @@ namespace StarMelee.IOC
             //BindResource<SpriteFont>("fonts/7th Service");
             //BindResource<Texture2D>("Sprites/Controllers/XBox/small_start");
             //BindResource<Song>("Audio/Music/An_Infinite_Univers");
-            
+            BindResource<Effect>("Shaders/MotionBlur");
         }
 
         private void BindResource<T>(string key)

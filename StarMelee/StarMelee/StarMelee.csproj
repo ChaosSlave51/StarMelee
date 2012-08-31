@@ -120,6 +120,7 @@
     <Compile Include="Actors\IWeapon.cs" />
     <Compile Include="Actors\Pawns\BaseEnemyShip.cs" />
     <Compile Include="Actors\Pawns\BasePlayerShip.cs" />
+    <Compile Include="Actors\Pawns\PhlanixShip.cs" />
     <Compile Include="Actors\Pawns\PlayerBullet.cs" />
     <Compile Include="Actors\Pawns\Ship.cs" />
     <Compile Include="Actors\Pawns\BaseBullet.cs" />
@@ -127,6 +128,7 @@
     <Compile Include="Collision\IDamanging.cs" />
     <Compile Include="Collision\ILethal.cs" />
     <Compile Include="Director.cs" />
+    <Compile Include="Drivers\ForwardDriver.cs" />
     <Compile Include="Drivers\DroneDriver.cs" />
     <Compile Include="Drivers\PlayerDriver.cs" />
     <Compile Include="Functions\DeathSpiral.cs" />
