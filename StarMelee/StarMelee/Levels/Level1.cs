@@ -46,9 +46,9 @@ namespace StarMelee.Levels
                     new Wave(new List<BaseEnemyShip>()
                                  {
                                      new BaseEnemyShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position = new Vector3(-10000, 13000, 0) },
-                                     new PhlanixShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position =   new Vector3(-5000, 13000, 0)},
-                                     new BaseEnemyShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position = new Vector3(0, 13000, 0)},
-                                     new PhlanixShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position =   new Vector3(5000, 13000, 0)},
+                                     new BaseEnemyShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position =   new Vector3(-5000, 13000, 0)},
+                                     new PhlanixShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position = new Vector3(0, 13000, 0)},
+                                     new BaseEnemyShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position =   new Vector3(5000, 13000, 0)},
                                     new BaseEnemyShip(gameState,rotation:new Vector3(0,0,MathHelper.Pi)) {Position = new Vector3(10000, 13000, 0)}
                                  }, i, _gameState));
             }

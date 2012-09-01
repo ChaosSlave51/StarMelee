@@ -53,20 +53,6 @@
       <Time>2009-06-23T01:40:16.3763457-04:00</Time>
     </Item>
     <Item>
-      <Source>Models\Ships\p1_saucer.fbx</Source>
-      <Name>Models\Ships\p1_saucer</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_saucer.xnb</Output>
-      <Time>2009-06-22T00:44:06.1315638-04:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\Ships\p1_saucer_0.xml</Key>
-        <Value>2010-12-28T03:13:21.0542-05:00</Value>
-      </Dependency>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\saucer_p1_diff_v1_0.xnb</Request>
-    </Item>
-    <Item>
       <Source>Models\Ships\p1_rocket.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
@@ -1080,6 +1066,20 @@
       <Options>None</Options>
       <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p2_diff_v1_0.xnb</Output>
       <Time>2012-08-28T22:57:36.9734-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p1_saucer.fbx</Source>
+      <Name>Models\Ships\p1_saucer</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_saucer.xnb</Output>
+      <Time>2009-06-22T00:44:06.1315638-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\Ships\p1_saucer_0.xml</Key>
+        <Value>2010-12-28T03:13:21.0542-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\saucer_p1_diff_v1_0.xnb</Request>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

@@ -1,5 +1,5 @@
-2012/08/30-01:14:53.008 1ae4 Recovering log #80
-2012/08/30-01:14:53.008 1ae4 Level-0 table #83: started
-2012/08/30-01:14:53.064 1ae4 Level-0 table #83: 12515 bytes OK
-2012/08/30-01:14:53.139 1ae4 Delete type=0 #80
-2012/08/30-01:14:53.140 1ae4 Delete type=3 #78
+2012/08/30-19:17:13.712 190c Recovering log #84
+2012/08/30-19:17:13.740 190c Level-0 table #86: started
+2012/08/30-19:17:13.753 190c Level-0 table #86: 7843 bytes OK
+2012/08/30-19:17:13.809 190c Delete type=0 #84
+2012/08/30-19:17:13.809 190c Delete type=3 #82
