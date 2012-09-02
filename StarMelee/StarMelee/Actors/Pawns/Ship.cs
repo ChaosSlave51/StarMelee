@@ -33,10 +33,10 @@ namespace StarMelee.Actors.Pawns
         public float EnterBankTime = 20;
         public float ExitBankTime = 40;
 
-      
 
 
-        public List<IWeapon> Weapons = new List<IWeapon>();
+
+        public List<WeaponSet> WeaponSets = new List<WeaponSet>();
         public float DyingDuration = 300;
         public float DyingTimer = 0;
         public BaseFunction DeathPath;
@@ -127,11 +127,7 @@ namespace StarMelee.Actors.Pawns
             if (CurrentState == State.Alive)
             {
                 CalculateBank();
-
-                foreach (var weapon in Weapons)
-                {
-                    weapon.Update();
-                }
+                WeaponSets.ForEach(x=>x.Update());
             }
             else if (CurrentState == State.Dying)
             {
@@ -181,19 +177,24 @@ namespace StarMelee.Actors.Pawns
 
         }
 
-        public virtual bool Fire1()
+        public virtual bool Fire(int setId)
         {
             if (CurrentState == State.Alive)
             {
+                if(setId>WeaponSets.Count-1)
+                {
+                    return false;
+                }
+                WeaponSets[setId].Fire();
                 
-                Weapons.ForEach(x=>x.Fire());
+                
                 return true;
             }
             return false;
         }
         public override IEnumerable<BaseGame.Resources.Resource> ResourcePaths()
         {
-            var resources = Resource.Combine(Weapons);
+            var resources = Resource.Combine(WeaponSets);
             return resources.Concat(base.ResourcePaths());
         }
 

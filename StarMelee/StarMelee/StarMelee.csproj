@@ -120,11 +120,13 @@
     <Compile Include="Actors\IWeapon.cs" />
     <Compile Include="Actors\Pawns\BaseEnemyShip.cs" />
     <Compile Include="Actors\Pawns\BasePlayerShip.cs" />
+    <Compile Include="Actors\Pawns\ThermoPlayerShip.cs" />
     <Compile Include="Actors\Pawns\PhlanixShip.cs" />
     <Compile Include="Actors\Pawns\PlayerBullet.cs" />
     <Compile Include="Actors\Pawns\Ship.cs" />
     <Compile Include="Actors\Pawns\BaseBullet.cs" />
     <Compile Include="Actors\BasePlayerWeapon.cs" />
+    <Compile Include="Actors\WeaponSet.cs" />
     <Compile Include="Collision\IDamanging.cs" />
     <Compile Include="Collision\ILethal.cs" />
     <Compile Include="Director.cs" />

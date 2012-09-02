@@ -2,21 +2,6 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>Models\Ships\p1_rocket.x</Source>
-      <Name>Models\Ships\p1_rocket</Name>
-      <Importer>XImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_rocket.xnb</Output>
-      <Time>2009-06-21T16:56:04.7025638-04:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\Ships\p1_rocket_0.xml</Key>
-        <Value>2010-12-28T03:13:20.1592-05:00</Value>
-      </Dependency>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\p1_back_0.xnb</Request>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\p1_rocket_0.xnb</Request>
-    </Item>
-    <Item>
       <Source>Textures\Ships\p1_back.tga</Source>
       <Name>Textures\Ships\p1_back</Name>
       <Importer>TextureImporter</Importer>
@@ -383,20 +368,6 @@
       <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\Seeking-Revenge.xnb</Output>
       <Extra>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Music\Seeking-Revenge.wma</Extra>
       <Time>2012-08-26T12:08:53.8704-04:00</Time>
-    </Item>
-    <Item>
-      <Source>Models\Ships\p1_wedge.fbx</Source>
-      <Name>Models\Ships\p1_wedge</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_wedge.xnb</Output>
-      <Time>2012-08-28T22:57:12.9714-04:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\Ships\p1_wedge_0.xml</Key>
-        <Value>2012-08-28T22:57:17.8844-04:00</Value>
-      </Dependency>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p1_diff_v1_0.xnb</Request>
     </Item>
     <Item>
       <Source>Models\Ships\p1_wedge.fbx</Source>
@@ -941,49 +912,6 @@
     </Item>
     <Item>
       <Source>Models\Ships\p2_rocket.x</Source>
-      <Name>Models\Ships\p2_rocket</Name>
-      <Importer>XImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_rocket.xnb</Output>
-      <Time>2012-08-30T19:23:49.0124-04:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\Ships\p2_rocket_0.xml</Key>
-        <Value>2012-08-30T19:23:53.551-04:00</Value>
-      </Dependency>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\p2_rocket_0.xnb</Request>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\p2_back_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Models\Ships\p2_saucer.fbx</Source>
-      <Name>Models\Ships\p2_saucer</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_saucer.xnb</Output>
-      <Time>2012-08-30T19:23:49.028-04:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\Ships\p2_saucer_0.xml</Key>
-        <Value>2012-08-30T19:23:54.8302-04:00</Value>
-      </Dependency>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\saucer_p2_diff_v1_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Models\Ships\p2_wedge.fbx</Source>
-      <Name>Models\Ships\p2_wedge</Name>
-      <Importer>FbxImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_wedge.xnb</Output>
-      <Time>2012-08-30T19:23:48.9812-04:00</Time>
-      <Dependency>
-        <Key>obj\x86\Debug\Models\Ships\p2_wedge_0.xml</Key>
-        <Value>2012-08-30T19:23:55.7662-04:00</Value>
-      </Dependency>
-      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p2_diff_v1_0.xnb</Request>
-    </Item>
-    <Item>
-      <Source>Models\Ships\p2_rocket.x</Source>
       <Importer>XImporter</Importer>
       <Options>IntermediateFile, DontCacheImportedData</Options>
       <Output>obj\x86\Debug\Models\Ships\p2_rocket_0.xml</Output>
@@ -1068,10 +996,49 @@
       <Time>2012-08-28T22:57:36.9734-04:00</Time>
     </Item>
     <Item>
+      <Source>Models\Ships\p1_rocket.x</Source>
+      <Name>Models\Ships\p1_rocket</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Parameters>
+        <Data Key="RotationX">90</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_rocket.xnb</Output>
+      <Time>2009-06-21T16:56:04.7025638-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\Ships\p1_rocket_0.xml</Key>
+        <Value>2010-12-28T03:13:20.1592-05:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\p1_back_0.xnb</Request>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\p1_rocket_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p2_rocket.x</Source>
+      <Name>Models\Ships\p2_rocket</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Parameters>
+        <Data Key="RotationX">90</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_rocket.xnb</Output>
+      <Time>2012-08-30T19:23:49.0124-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\Ships\p2_rocket_0.xml</Key>
+        <Value>2012-08-30T19:23:53.551-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\p2_rocket_0.xnb</Request>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\p2_back_0.xnb</Request>
+    </Item>
+    <Item>
       <Source>Models\Ships\p1_saucer.fbx</Source>
       <Name>Models\Ships\p1_saucer</Name>
       <Importer>FbxImporter</Importer>
       <Processor>ModelProcessor</Processor>
+      <Parameters>
+        <Data Key="RotationX">90</Data>
+      </Parameters>
       <Options>None</Options>
       <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_saucer.xnb</Output>
       <Time>2009-06-22T00:44:06.1315638-04:00</Time>
@@ -1080,6 +1047,84 @@
         <Value>2010-12-28T03:13:21.0542-05:00</Value>
       </Dependency>
       <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\textures\ships\saucer_p1_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p1_wedge.fbx</Source>
+      <Name>Models\Ships\p1_wedge</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Parameters>
+        <Data Key="RotationX">90</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p1_wedge.xnb</Output>
+      <Time>2012-08-28T22:57:12.9714-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\Ships\p1_wedge_0.xml</Key>
+        <Value>2012-08-28T22:57:17.8844-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p1_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p2_saucer.fbx</Source>
+      <Name>Models\Ships\p2_saucer</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Parameters>
+        <Data Key="RotationX">90</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_saucer.xnb</Output>
+      <Time>2012-08-30T19:23:49.028-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\Ships\p2_saucer_0.xml</Key>
+        <Value>2012-08-30T19:23:54.8302-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\saucer_p2_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Ships\p2_wedge.fbx</Source>
+      <Name>Models\Ships\p2_wedge</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Parameters>
+        <Data Key="RotationX">90</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\Ships\p2_wedge.xnb</Output>
+      <Time>2012-08-30T19:23:48.9812-04:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\Ships\p2_wedge_0.xml</Key>
+        <Value>2012-08-30T19:23:55.7662-04:00</Value>
+      </Dependency>
+      <Request>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p2_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Audio\Ships\alarm-clock.wav</Source>
+      <Name>Audio\Ships\alarm-clock</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Ships\alarm-clock.xnb</Output>
+      <Time>2012-09-02T16:21:50.7014-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Ships\alarm001.wav</Source>
+      <Name>Audio\Ships\alarm001</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Ships\alarm001.xnb</Output>
+      <Time>2012-09-02T15:51:15.3394-04:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Ships\shipsbell.wav</Source>
+      <Name>Audio\Ships\shipsbell</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Ships\shipsbell.xnb</Output>
+      <Time>2012-09-02T16:22:44.1134-04:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

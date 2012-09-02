@@ -132,3 +132,6 @@ C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMe
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\p2_back_0.xnb
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\saucer_p2_diff_v1_0.xnb
 C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Models\textures\wedge_p2_diff_v1_0.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Ships\alarm-clock.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Ships\alarm001.xnb
+C:\Users\Andrey\Documents\Visual Studio 2008\Projects\StarMelee\StarMelee\StarMelee\bin\x86\Debug\Content\Audio\Ships\shipsbell.xnb

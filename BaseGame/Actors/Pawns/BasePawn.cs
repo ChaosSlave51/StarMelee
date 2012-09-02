@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Reflection;
+using BaseGame.Actors.Sprites;
 using BaseGame.Drivers;
 using BaseGame.Physics;
 using BaseGame.Resources;
@@ -20,7 +22,8 @@ namespace BaseGame.Actors.Pawns
         protected int DamagedFrames = 0;
         public CollisionHelper CollisionsHelper;
 
-    
+        protected List<BaseSprite> Hud;
+
 #if DEBUG
         private Model _collisionSphereModel;//sometimes not used if collision shere display is comented out
 #endif 
@@ -41,6 +44,7 @@ namespace BaseGame.Actors.Pawns
 
         private  MethodInfo updateMethod;
         private IDriver _driver;
+ 
 
         public BasePawn(string resourcePath, IDriver driver = null, Vector3 rotation= new Vector3())
         {
@@ -61,7 +65,7 @@ namespace BaseGame.Actors.Pawns
 
         }
 
-        public void Draw(Camera camera)
+        public void Draw(Camera camera,SpriteBatch spriteBatch)
         {
             ResolveResourcesIfNeeded();
 
@@ -88,20 +92,28 @@ namespace BaseGame.Actors.Pawns
                                                   effect.PreferPerPixelLighting = true;
 
                                                   //sets location of model
-                                                  effect.World = Helper.CreateRotationXYZ(BaseRotation) *
+                                                  effect.World = 
                                                                  Helper.CreateRotationXYZ(Rotation) *
                                                                  Matrix.CreateScale(Scale * BaseScale) *
                                                                  Matrix.CreateTranslation(BasePosition + Position);
                                                   effect.Projection = camera.CamperaProjectionMatrix;
                                                   effect.View = camera.CameraViewMatrix;
                                               });
-            
+            if (Hud != null)
+            {
+                foreach (var sprite in Hud)
+                {
+                    sprite.Draw(spriteBatch);
+                }
+            }
+
+
 #if DEBUG
             //if (Corporeal)
             //{
             //    foreach (var collisionSphere in CollisionSpheres)
             //    {
-            //        RenderModel(CollisionSphereModel, camera, (effect) =>
+            //        RenderModel(_collisionSphereModel, camera, (effect) =>
             //                                                      {
             //                                                          effect.EnableDefaultLighting();
 
@@ -109,13 +121,11 @@ namespace BaseGame.Actors.Pawns
 
             //                                                          //sets location of model
             //                                                          effect.World =
-            //                                                              Helper.CreateRotationXYZ(BaseRotation) *
-            //                                                              Helper.CreateRotationXYZ(Rotation) *
+            //                                                             Helper.CreateRotationXYZ(Rotation) *
             //                                                              Matrix.CreateScale(collisionSphere.Radius) *
             //                                                              Matrix.CreateTranslation(BasePosition +
             //                                                                                       Position +
-            //                                                                                       collisionSphere.
-            //                                                                                           Position);
+            //                                                                                       collisionSphere.Center);
             //                                                          effect.Projection = camera.CamperaProjectionMatrix;
             //                                                          effect.View = camera.CameraViewMatrix;
             //                                                      });
@@ -184,11 +194,17 @@ namespace BaseGame.Actors.Pawns
 
         public virtual IEnumerable<Resource> ResourcePaths()
         {
-            return new Resource[] { new Resource(_resourcePath, typeof(Model)),
+            var resources=new List<Resource> { new Resource(_resourcePath, typeof(Model)),
+                
 #if DEBUG
             new Resource("Models/Debug/sphere",typeof(Model))
 #endif
             };
+            if (Hud != null)
+            {
+                resources.AddRange(Resource.Combine(Hud));
+            }
+            return resources;
         }
     }
 }

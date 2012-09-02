@@ -23,7 +23,7 @@ namespace StarMelee.Actors.Pawns
             : base("Models/Ships/p1_saucer", gameState, driver)
         {
             _gameState = gameState;
-            BaseRotation = new Vector3(MathHelper.PiOver2, 0, 0);
+          
             CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 700) };
 
              SpeedSide=100.0f;
@@ -99,10 +99,25 @@ namespace StarMelee.Actors.Pawns
         protected override void Setup()
         {
             base.Setup();
+            WeaponSet basicWeaponSet = new WeaponSet(new List<IWeapon>
+                                                    {
+                                                        new BasePlayerWeapon(this, GameState)
+                                                            {Position = new Vector3(0, 500, 0)},
+                                                        new BasePlayerWeapon(this, GameState)
+                                                            {
+                                                                Position = new Vector3(500, 500, 0),
+                                                                Rotation = new Vector3(0, 0, MathHelper.Pi/40)
+                                                            },
+                                                        new BasePlayerWeapon(this, GameState)
+                                                            {
 
-            Weapons.Add(new BasePlayerWeapon(this, GameState) {CooldownTime = 5, Position = new Vector3(0, 500, 0)});
-            Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 5, Position = new Vector3(500, 500, 0), Rotation = new Vector3(0,  0,MathHelper.Pi/40) });
-            Weapons.Add(new BasePlayerWeapon(this, GameState) { CooldownTime = 5, Position = new Vector3(-500, 500, 0), Rotation = new Vector3(0, 0, -MathHelper.Pi/40) });
+                                                                Position = new Vector3(-500, 500, 0),
+                                                                Rotation = new Vector3(0, 0, -MathHelper.Pi/40)
+                                                            }
+                                                    }){CooldownTime = 5};
+
+            WeaponSets.Add(basicWeaponSet);
+
         }
 
     }

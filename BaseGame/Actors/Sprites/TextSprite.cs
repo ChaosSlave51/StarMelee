@@ -13,7 +13,8 @@ namespace BaseGame.Actors.Sprites
     {
         private SpriteFont _font;
         private readonly string _fontPath;
-        private readonly Color _color;
+        public Color Color { get; set; }
+    
         public string Format { get; set; }
         public object Value { get; set; }
 
@@ -29,13 +30,13 @@ namespace BaseGame.Actors.Sprites
         public TextSprite(string fontPath,Color color)
         {
             _fontPath = fontPath;
-            _color = color;
+            Color = color;
             Format = "{0:0}";
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
             ResolveResourcesIfNeeded();
-            spriteBatch.DrawString(_font, string.Format(Format, Value), new Vector2(Position.X, Position.Y), _color);
+            spriteBatch.DrawString(_font, string.Format(Format, Value), new Vector2(Position.X, Position.Y), Color);
         }
 
         protected override void ResolveResources()
@@ -43,7 +44,7 @@ namespace BaseGame.Actors.Sprites
             _font = ServiceLocator.Current.GetInstance<SpriteFont>(_fontPath); ;
         }
 
-        public IEnumerable<Resource> ResourcePaths()
+        public override IEnumerable<Resource> ResourcePaths()
         {
             return new Resource[] { new Resource(_fontPath,typeof(SpriteFont))};
         }

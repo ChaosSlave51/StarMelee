@@ -1,5 +1,5 @@
-2012/08/31-17:49:36.796 1af0 Recovering log #87
-2012/08/31-17:49:36.849 1af0 Level-0 table #89: started
-2012/08/31-17:49:36.891 1af0 Level-0 table #89: 17543 bytes OK
-2012/08/31-17:49:36.937 1af0 Delete type=0 #87
-2012/08/31-17:49:36.937 1af0 Delete type=3 #85
+2012/09/02-13:14:21.475 1a34 Recovering log #98
+2012/09/02-13:14:21.509 1a34 Level-0 table #100: started
+2012/09/02-13:14:21.556 1a34 Level-0 table #100: 25069 bytes OK
+2012/09/02-13:14:21.626 1a34 Delete type=0 #98
+2012/09/02-13:14:21.626 1a34 Delete type=3 #96

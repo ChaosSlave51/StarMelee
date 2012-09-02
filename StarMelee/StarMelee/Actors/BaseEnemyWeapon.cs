@@ -14,8 +14,6 @@ namespace StarMelee.Actors
     class BaseEnemyWeapon : BaseActor,IWeapon
     {
         public Ship ParentShip = null;
-        public int CooldownTime=0;
-        protected int Cooldown = 0;
         private readonly ShmupGameState _gameState;
 
         protected SoundEffect DeathSound;      
@@ -30,26 +28,22 @@ namespace StarMelee.Actors
 
         public void Fire()
         {
-            if (Cooldown == 0)
-            {
+
                 BaseBullet baseBullet = new BaseBullet(new Vector3(ParentShip.Rotation.X + Rotation.X, 0, ParentShip.Rotation.Z + Rotation.Z));
                 //Matrix rotationMatrix = Matrix.CreateFromYawPitchRoll(ParentShip.Rotation.Y, ParentShip.Rotation.X, ParentShip.Rotation.Z);
 
                 baseBullet.Position = ParentShip.TotalPosition; //+ Vector3.Transform(Position, rotationMatrix);
-                
-                
 
                 _gameState.EnemyBullets.Add(baseBullet);
-                Cooldown = CooldownTime;
-            }
+             
+            
         }
+
         public void Update()
         {
-            if (Cooldown > 0)
-            {
-                Cooldown--;
-            }
+         
         }
+
         public IEnumerable<Resource> ResourcePaths()
         {
             BaseBullet baseBullet = new BaseBullet();

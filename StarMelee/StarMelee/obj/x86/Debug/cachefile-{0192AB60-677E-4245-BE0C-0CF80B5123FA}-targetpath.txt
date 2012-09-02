@@ -1,4 +1,3 @@
-Content\Models\Ships\p1_rocket.xnb
 Content\Textures\Ships\p1_back.xnb
 Content\Textures\Ships\p1_rocket.xnb
 Content\Textures\Ships\saucer_p1_diff_v1.xnb
@@ -35,7 +34,6 @@ Content\Audio\Music\An_Infinite_Univers.xnb
 Content\Audio\Music\An_Infinite_Univers.wma
 Content\Audio\Music\Seeking-Revenge.xnb
 Content\Audio\Music\Seeking-Revenge.wma
-Content\Models\Ships\p1_wedge.xnb
 Content\Models\Textures\asteroid1.xnb
 Content\Models\Textures\asteroid1N.xnb
 Content\Models\Textures\asteroid2.xnb
@@ -94,11 +92,16 @@ Content\Models\Textures\weapon_select_FINAL.xnb
 Content\Models\textures\wedge_p1_diff_v1_0.xnb
 Content\Shaders\MotionBlur.xnb
 Content\Models\Ships\pea_proj.xnb
-Content\Models\Ships\p2_rocket.xnb
-Content\Models\Ships\p2_saucer.xnb
-Content\Models\Ships\p2_wedge.xnb
 Content\Models\textures\p2_rocket_0.xnb
 Content\Models\textures\p2_back_0.xnb
 Content\Models\textures\saucer_p2_diff_v1_0.xnb
 Content\Models\textures\wedge_p2_diff_v1_0.xnb
+Content\Models\Ships\p1_rocket.xnb
+Content\Models\Ships\p2_rocket.xnb
 Content\Models\Ships\p1_saucer.xnb
+Content\Models\Ships\p1_wedge.xnb
+Content\Models\Ships\p2_saucer.xnb
+Content\Models\Ships\p2_wedge.xnb
+Content\Audio\Ships\alarm-clock.xnb
+Content\Audio\Ships\alarm001.xnb
+Content\Audio\Ships\shipsbell.xnb

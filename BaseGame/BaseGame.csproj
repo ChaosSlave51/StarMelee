@@ -132,6 +132,7 @@
     <Compile Include="Actors\Sprites\StillSprite.cs" />
     <Compile Include="Actors\Sprites\TextSprite.cs" />
     <Compile Include="Actors\Audio\Music.cs" />
+    <Compile Include="BxHsb.cs" />
     <Compile Include="Config\Config.cs">
       <DependentUpon>Config.xsd</DependentUpon>
     </Compile>

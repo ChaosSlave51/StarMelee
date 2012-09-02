@@ -13,7 +13,7 @@ namespace BaseGame.Actors
         protected bool ResourcesLoaded = false;
         public virtual Vector3 Position { get; set; }
         public Vector3 Rotation { get; set; }
-        public Vector3 BaseRotation { get; set; }
+        
         public Vector3 BasePosition { get; set; }
         public float Scale = 1.0f;
         public float BaseScale = 1.0f;
@@ -28,7 +28,7 @@ namespace BaseGame.Actors
         {
             get
             {
-                return BaseRotation + Rotation;
+                return  Rotation;
             }
         }
         public float TotalScale

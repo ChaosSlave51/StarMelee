@@ -20,14 +20,29 @@ namespace StarMelee.Actors.Pawns
         protected override void Setup()
         {
             base.Setup();
+            CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 800) };
+
             Scale = 2f;
             MaxLife = 10;
             PointValue = 2000;
 
-            Weapons.Add(new BaseEnemyWeapon(this, GameState) { CooldownTime = 50, Position = new Vector3(0, 500, 0)});
-            Weapons.Add(new BaseEnemyWeapon(this, GameState) { CooldownTime = 50, Position = new Vector3(0, 500, 0), Rotation = new Vector3(0, 0, MathHelper.Pi / 10) });
-            Weapons.Add(new BaseEnemyWeapon(this, GameState) { CooldownTime = 50, Position = new Vector3(0, 500, 0), Rotation = new Vector3(0, 0, -MathHelper.Pi / 10) });
-
+            WeaponSet weaponSet=new WeaponSet( new List<IWeapon>
+                                         {
+                                             new BaseEnemyWeapon(this, GameState)
+                                                 { Position = new Vector3(0, 500, 0)},
+                                             new BaseEnemyWeapon(this, GameState)
+                                                 {
+                                                     Position = new Vector3(0, 500, 0),
+                                                     Rotation = new Vector3(0, 0, MathHelper.Pi/10)
+                                                 },
+                                             new BaseEnemyWeapon(this, GameState)
+                                                 {
+                                                     Position = new Vector3(0, 500, 0),
+                                                     Rotation = new Vector3(0, 0, -MathHelper.Pi/10)
+                                                 }
+                                         }) { CooldownTime = 50};
+            WeaponSets.Clear();
+            WeaponSets.Add(weaponSet);
 
         }
     }

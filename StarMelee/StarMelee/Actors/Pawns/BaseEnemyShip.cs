@@ -21,9 +21,9 @@ namespace StarMelee.Actors.Pawns
             : base(modelPath, gameState, null, rotation)//
         {
 
-            BaseRotation = new Vector3(MathHelper.PiOver2, 0, 0);
+            
             BaseScale = 0.5f;
-            CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 500) };
+           
             Driver = new DroneDriver(rotation);
 
         }
@@ -40,15 +40,18 @@ namespace StarMelee.Actors.Pawns
         protected override void Setup()
         {
             base.Setup();
-
+            CollisionSpheres = new List<BoundingSphere>() { new BoundingSphere(new Vector3(), 500) };
             MaxLife = 3;
             PointValue = 100;
-            var weapon1 = new BaseEnemyWeapon(this, GameState);
-            weapon1.CooldownTime = 50;
 
-            weapon1.Position = new Vector3(0, 500, 0);
-            Weapons.Add(weapon1);
+            WeaponSet weaponSet = new WeaponSet(new List<IWeapon>()
+                                                    {
+                                                        new BaseEnemyWeapon(this, GameState)
+                                                            {Position = new Vector3(0, 500, 0)}
+                                                    }){CooldownTime = 50};
+            
 
+            WeaponSets.Add(weaponSet);
         }
 
     }

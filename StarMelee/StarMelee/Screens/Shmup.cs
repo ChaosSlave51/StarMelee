@@ -39,7 +39,7 @@ namespace StarMelee.Screens
             _gameState= new ShmupGameState();
            
             _level = new Level1(_gameState);
-            _gameState.Player = new BasePlayerShip(_gameState, new PlayerDriver());
+            _gameState.Player = new ThermoPlayerShip(_gameState, new PlayerDriver());
             Score = new TextSprite("fonts/LcdBold", Color.Goldenrod) { Format = "{0:000000000}" };
             _music = new Music("Audio/Music/Seeking-Revenge");
             _gameState.Hud.Add(Score);
@@ -135,16 +135,16 @@ namespace StarMelee.Screens
             Graphics.GraphicsDevice.Clear(Color.Azure);
             //_graphics.GraphicsDevice.BlendState=BlendState.AlphaBlend;
             // TODO: Add your drawing code here
-
+            SpriteBatch.Begin();
             
             _gameState.EachPawn(pawn =>
                                     {
                                         if (pawn.Alive)
                                         {
-                                            pawn.Draw(CameraMain);
+                                            pawn.Draw(CameraMain,SpriteBatch);
                                         }
                                     });
-            SpriteBatch.Begin();
+          
             DrawSprites(gameTime);
             SpriteBatch.End();
         }

@@ -38,7 +38,7 @@ namespace BaseGame.Actors.Sprites
             _texture = ServiceLocator.Current.GetInstance<Texture2D>(_texturePath); ;
         }
 
-        public IEnumerable<Resource> ResourcePaths()
+        public override IEnumerable<Resource> ResourcePaths()
         {
             return new Resource[] { new Resource(_texturePath, typeof(Texture2D)) };
         }

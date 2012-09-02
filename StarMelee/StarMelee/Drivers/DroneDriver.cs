@@ -28,7 +28,7 @@ namespace StarMelee.Drivers
 
             pawn.Movement= _path.GetStep(time);
             pawn.Rotation = _path.GetRotation(time);
-            pawn.Fire1();
+            pawn.Fire(0);
         }
     }
 }

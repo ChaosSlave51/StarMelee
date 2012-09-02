@@ -28,7 +28,13 @@ namespace StarMelee.Drivers
             if (_actionState.Down.BoolValue())
                 pawn.MoveBack();
             if (_actionState.Fire1.BoolValue())
-                pawn.Fire1();
+                pawn.Fire(0);
+            if (_actionState.Fire2.BoolValue())
+                pawn.Fire(1);
+            if (_actionState.Fire3.BoolValue())
+                pawn.Fire(2);
+            if (_actionState.Fire4.BoolValue())
+                pawn.Fire(3);
         }
     }
 }

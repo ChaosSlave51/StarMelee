@@ -1,5 +1,5 @@
-2012/08/30-19:17:13.712 190c Recovering log #84
-2012/08/30-19:17:13.740 190c Level-0 table #86: started
-2012/08/30-19:17:13.753 190c Level-0 table #86: 7843 bytes OK
-2012/08/30-19:17:13.809 190c Delete type=0 #84
-2012/08/30-19:17:13.809 190c Delete type=3 #82
+2012/09/01-22:50:45.268 5ec Recovering log #94
+2012/09/01-22:50:45.276 5ec Level-0 table #97: started
+2012/09/01-22:50:45.474 5ec Level-0 table #97: 3315 bytes OK
+2012/09/01-22:50:45.554 5ec Delete type=0 #94
+2012/09/01-22:50:45.554 5ec Delete type=3 #91
